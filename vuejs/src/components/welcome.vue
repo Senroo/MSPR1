@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style>
-
+.main{
+  border: solid 1px white; 
+}
 </style>

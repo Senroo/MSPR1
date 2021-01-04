@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    
+    <div class="header-composent">
     <Header />
+    </div>
+    <div class="body">
     <Welcome />
+    </div>
     <footer>Le groupe de folie</footer>
   </div>
 </template>
@@ -20,6 +23,14 @@ export default {
 </script>
 
 <style>
+body{
+  margin: 3%;
+  background-color:#3C454C;
+
+}
+.body{
+  margin-top: 10%;
+}
 footer {
   background: black;
   color: white;

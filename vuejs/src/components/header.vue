@@ -22,10 +22,17 @@ export default {};
 .header_container {
   display: flex;
   justify-content: space-around;
+  border: solid 1px white;
 }
 
 .logo img {
-    width: 5    0%;
+    width: 50%;
+}
+
+.menu{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
 }
 
 </style>
