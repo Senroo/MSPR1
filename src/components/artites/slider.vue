@@ -1,8 +1,8 @@
 <template>
 <div id="slider">
-    <div v-for="(artists, index) in artist" :key=index>
+    <div v-for="(artists,index) in artist" :key="index">
       <p>{{artists.name}}</p>
-      <img :src="artists.picture">
+      <img :src=artists.picture>
       </div>
 </div>
   
@@ -18,22 +18,22 @@ export default {
               {
               id: 1,
               name:'romain',
-              picture:'../assets/artists/romain.jpg',
+              picture: require('@/assets/artists/romain.jpg'),
             },
                           {
               id: 2,
               name:'yann',
-              picture:'./assets/artists/yann.jpg',
+              picture:require('@/assets/artists/yann.jpg'),
             },
                           {
               id: 3,
               name:'vincent',
-              picture:'../assets/artists/vincent.jpg',
+              picture:require('@/assets/artists/vincent.jpg'),
             },
                           {
               id: 4,
               name:'alex',
-              picture:'../assets/artists/alex.jpg',
+              picture:require('@/assets/artists/alex.jpg'),
             },
             ],
         }
@@ -60,5 +60,11 @@ axios.request(options).then(function (response) {
 </script>
 
 <style>
-
+img{
+  width: 100%;
+  height: 100%;
+}
+#slider{
+  display: flex;
+}
 </style>
