@@ -1,4 +1,3 @@
-
 import Vue from "vue";
 
 // save our state (isPanel open or not) 

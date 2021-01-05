@@ -10,7 +10,7 @@
   </div>
 </template>
 <script>
-import { store, mutations } from "@/store.js";
+import {store, mutations} from "@/store.js";
 
 export default {
   computed: {
@@ -62,8 +62,8 @@ button:focus {
   width: auto;
   margin-top: -1px;
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
-    opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
-    background-color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+  background-color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .burger-bar--1 {
