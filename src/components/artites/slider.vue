@@ -1,20 +1,40 @@
 <template>
 <div id="slider">
-    <pre>{{info}}</pre>
+    <div v-for="(artists, index) in artist" :key=index>
+      <p>{{artists.name}}</p>
+      </div>
 </div>
   
 </template>
 
 <script>
-import axios from 'axios';
+/*import axios from 'axios';*/
 
 export default {
     data() {
         return{
-            artist:[],
+            artist:[
+              {
+              id: 1,
+              name:'romain',
+            },
+                          {
+              id: 2,
+              name:'yann',
+            },
+                          {
+              id: 3,
+              name:'vincent',
+            },
+                          {
+              id: 4,
+              name:'alex',
+            },
+            ],
         }
     },
- mounted () {
+
+/* mounted () {
 var options = {
   method: 'GET',
   url: 'https://theaudiodb.p.rapidapi.com/artist-mb.php',
@@ -30,7 +50,8 @@ axios.request(options).then(function (response) {
 }).catch(function (error) {
 	console.error(error);
 });
- }}
+ }*/
+ }
 </script>
 
 <style>
