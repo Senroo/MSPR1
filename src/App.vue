@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="main-nav">
       <div class="logo">
-        <img width="20%" src="./assets/logo.png" />
+        <img width="20%" src="./assets/logo.png"/>
       </div>
       <Burger></Burger>
     </nav>
@@ -26,7 +26,8 @@
 <script>
 import Burger from "./components/menu/burger.vue";
 import Sidebar from "./components/menu/sidebar.vue";
-import Slider from"./components/artites/slider.vue";
+import Slider from "./components/artites/slider.vue";
+
 export default {
   name: "app",
   components: {
@@ -50,10 +51,10 @@ body {
   height: 100%;
   background: rgb(101, 31, 87);
   background: linear-gradient(
-    45deg,
-    rgba(101, 31, 87, 1) 0%,
-    rgba(225, 113, 87, 1) 48%,
-    rgba(249, 248, 113, 1) 100%
+      45deg,
+      rgba(101, 31, 87, 1) 0%,
+      rgba(225, 113, 87, 1) 48%,
+      rgba(249, 248, 113, 1) 100%
   );
 }
 
