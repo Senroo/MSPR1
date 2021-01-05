@@ -4,6 +4,8 @@
       <p>{{artists.name}}</p>
       <img :src=artists.picture>
       </div>
+
+      
 </div>
   
 </template>
@@ -65,6 +67,6 @@ img{
   height: 100%;
 }
 #slider{
-  display: flex;
+  
 }
 </style>

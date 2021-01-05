@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="main-nav">
       <div class="logo">
-        <img width="20%" src="./assets/logo.png"/>
+        <img width="20%" src="./assets/logo.svg"/>
       </div>
       <Burger></Burger>
     </nav>
@@ -42,7 +42,6 @@ export default {
 <style>
 html {
   height: 100%;
-  overflow: hidden;
 }
 
 body {
