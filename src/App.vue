@@ -9,13 +9,15 @@
 
     <Sidebar>
       <ul class="sidebar-panel-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
+        <li><router-link to="/partenaire">Partenaires</router-link></li>
+        <li><router-link to="/contact">Contact</router-link></li>
       </ul>
     </Sidebar>
+    <router-view></router-view>
     <Slider/>
-
+    &
     <div class="container">
       <div class="artiste">
         <p>Oui</p>
