@@ -2,6 +2,7 @@
 <div id="slider">
     <div v-for="(artists, index) in artist" :key=index>
       <p>{{artists.name}}</p>
+      <img :src="artists.picture">
       </div>
 </div>
   
@@ -17,18 +18,22 @@ export default {
               {
               id: 1,
               name:'romain',
+              picture:'../assets/artists/romain.jpg',
             },
                           {
               id: 2,
               name:'yann',
+              picture:'./assets/artists/yann.jpg',
             },
                           {
               id: 3,
               name:'vincent',
+              picture:'../assets/artists/vincent.jpg',
             },
                           {
               id: 4,
               name:'alex',
+              picture:'../assets/artists/alex.jpg',
             },
             ],
         }
