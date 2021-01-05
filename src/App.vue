@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="main-nav">
       <div class="logo">
-        <img width="20%" src="./assets/logo.svg"/>
+        <img width="20%" src="./assets/logo.svg" />
       </div>
       <Burger></Burger>
     </nav>
@@ -16,18 +16,17 @@
       </ul>
     </Sidebar>
     <router-view></router-view>
-    <Slider/>
-    <div class="container">
-      <div class="artiste">
-        <p>Oui</p>
-      </div>
-    </div>
+    <News />
+    <Slider />
+    <Carte />
   </div>
 </template>
 <script>
 import Burger from "./components/menu/burger.vue";
 import Sidebar from "./components/menu/sidebar.vue";
 import Slider from "./components/artites/slider.vue";
+import News from "./components/menu/ImportantInfo.vue";
+import Carte from "./components/carte/carte.vue";
 
 export default {
   name: "app",
@@ -35,6 +34,8 @@ export default {
     Burger,
     Sidebar,
     Slider,
+    News,
+    Carte,
   },
 };
 </script>
@@ -51,10 +52,10 @@ body {
   height: 100%;
   background: rgb(101, 31, 87);
   background: linear-gradient(
-      45deg,
-      rgba(101, 31, 87, 1) 0%,
-      rgba(225, 113, 87, 1) 48%,
-      rgba(249, 248, 113, 1) 100%
+    45deg,
+    rgba(101, 31, 87, 1) 0%,
+    rgba(225, 113, 87, 1) 48%,
+    rgba(249, 248, 113, 1) 100%
   );
 }
 
