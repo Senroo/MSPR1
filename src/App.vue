@@ -17,7 +17,6 @@
     </Sidebar>
     <router-view></router-view>
     <Slider/>
-    &
     <div class="container">
       <div class="artiste">
         <p>Oui</p>
