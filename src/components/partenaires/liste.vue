@@ -1,7 +1,14 @@
 <template>
-  <div id="partenaires" class="d-flex flex-wrap justify-content-around text-center mt-5">
-    <div v-for="(partenaire,index) in partenaires" :key="index" class="partenaireItem">
-      <img :src=partenaire.picture :alt="partenaire.name" class="partenaireImg">
+  <div>
+    <div id="searchbar" class="mt-5 w-75 mx-auto position-relative">
+      <input type="search" placeholder="Trouver un partenaire" v-model="partSearch" id="partSearchbar"
+             class="form-control rounded text-center">
+      <i class="fas fa-search position-absolute"></i>
+    </div>
+    <div id="partenaires" class="d-flex flex-wrap justify-content-around text-center mt-5">
+      <div v-for="(partenaire,index) in filteredPartenaires" :key="index" class="partenaireItem">
+        <img :src=partenaire.picture :alt="partenaire.name" class="partenaireImg">
+      </div>
     </div>
   </div>
 </template>
@@ -10,6 +17,7 @@
 export default {
   data() {
     return {
+      partSearch: "",
       partenaires: [
         {name: 'Desperados', picture: require('@/assets/partenaires/desperados.svg')},
         {name: 'Spotify', picture: require('@/assets/partenaires/spotify.svg')},
@@ -25,6 +33,22 @@ export default {
         {name: 'Marbary', picture: require('@/assets/partenaires/marbary.svg')},
       ],
     }
+  },
+  computed: {
+    filteredPartenaires: function () {
+      let part_array = this.partenaires,
+          partSearch = this.partSearch;
+      if(!partSearch){
+        return part_array;
+      }
+      partSearch = partSearch.trim().toLowerCase();
+      part_array = part_array.filter(function(item){
+        if(item.name.toLowerCase().indexOf(partSearch) !== -1){
+          return item;
+        }
+      })
+      return part_array;
+    },
   }
 }
 </script>
@@ -37,5 +61,10 @@ export default {
 
 .partenaireItem {
   width: 33%;
+}
+
+#searchbar .fa-search {
+  left: 15px;
+  top: 10px;
 }
 </style>
