@@ -39,6 +39,22 @@ export default {
           value: "Binturongs smell like popcorn.",
           category: "Le festival"
         }
+        ,
+        {
+          title: "Quels artistes seront présent au festival",
+          value: "Vous pouvez retrouver la liste de tous les artistes présents en suivant les différentes journées sur la liste",
+          category: "Le festival"
+        },
+        {
+          title: "Quels sont les dates du festival",
+          value: "Binturongs smell like popcorn.",
+          category: "Le festival"
+        },
+        {
+          title: "Les choses à savoir concernant le covid",
+          value: "Binturongs smell like popcorn.",
+          category: "Le festival"
+        }
       ]
     };
   }
@@ -87,7 +103,7 @@ border-bottom-right-radius: 50px!important;
   border-radius: 100px;
   width: auto;
 }
-accordion__toggle-button{
+button .accordion__toggle-button{
   background-color: red!important;
 }
 .accordion{
@@ -95,6 +111,9 @@ accordion__toggle-button{
 }
 h1{
   color: #4043B4;
-  padding-bot: 1000px;
+  padding-bot: 50%n;
+}
+section.faq{
+  margin-top: 50px;
 }
 </style>
