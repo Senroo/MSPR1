@@ -5,8 +5,10 @@ import VueSplide from '@splidejs/vue-splide';
 
 Vue.use( VueSplide );
 
-// Import Bootstrap an BootstrapVue CSS files (order is important)
+// Import Bootstrap and BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
+// Import FontAwesome CSS/JS Files
+import '@fortawesome/fontawesome-free/css/all.css'
 
 Vue.config.productionTip = false
 

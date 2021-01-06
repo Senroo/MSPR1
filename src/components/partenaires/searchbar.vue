@@ -1,6 +1,8 @@
 <template>
-  <div id="searchbar">
-    <input type="search" placeholder="Trouver un partenaire" class="form-control w-75 rounded mx-auto mt-5 text-center">
+  <div id="searchbar" class="mt-5 w-75 mx-auto">
+    <input type="search" placeholder="Trouver un partenaire" v-model="partSearchString" id="partSearchbar"
+           class="form-control rounded text-center">
+    <i class="fas fa-search position-absolute"></i>
   </div>
 </template>
 
@@ -11,5 +13,8 @@ export default {
 </script>
 
 <style>
-
+#searchbar .fa-search {
+  right: 15px;
+  top: 10px;
+}
 </style>
