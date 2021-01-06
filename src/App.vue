@@ -42,6 +42,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lato",serif;
+  height: 100%;
   background: rgb(101, 31, 87);
   background: linear-gradient(
     45deg,
