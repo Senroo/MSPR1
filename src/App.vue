@@ -14,6 +14,8 @@
         <li><router-link to="/partenaire">Partenaires</router-link></li>
         <li><router-link to="/contact">Contact</router-link></li>
         <li><router-link to="/Faq">FAQ</router-link></li>
+        <li><router-link to="/programation">Programation</router-link></li>
+
       </ul>
     </Sidebar>
 
