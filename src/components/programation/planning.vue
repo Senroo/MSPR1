@@ -41,7 +41,7 @@ export default {
       },
       {
         name: 'Nekfeu',
-        type: 'IDK',
+        type: 'idk',
         jour: 'samedi'
       },
       {
