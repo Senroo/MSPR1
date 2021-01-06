@@ -1,8 +1,7 @@
 <template>
-  <div id="partenaires">
-    <div v-for="(partenaire,index) in partenaires" :key="index">
-      <p>{{partenaire.name}}</p>
-      <img :src=partenaire.picture>
+  <div id="partenaires" class="d-flex flex-wrap justify-content-around text-center mt-5">
+    <div v-for="(partenaire,index) in partenaires" :key="index" class="partenaireItem">
+      <img :src=partenaire.picture :alt="partenaire.name" class="partenaireImg">
     </div>
   </div>
 </template>
@@ -12,22 +11,18 @@ export default {
   data() {
     return {
       partenaires: [
-        {
-          name: 'romain',
-          picture: require('@/assets/partenaires/partenaire.jpg'),
-        },
-        {
-          name: 'yann',
-          picture: require('@/assets/partenaires/partenaire.jpg'),
-        },
-        {
-          name: 'vincent',
-          picture: require('@/assets/partenaires/partenaire.jpg'),
-        },
-        {
-          name: 'alex',
-          picture: require('@/assets/partenaires/partenaire.jpg'),
-        },
+        {name: 'Desperados', picture: require('@/assets/partenaires/desperados.svg')},
+        {name: 'Spotify', picture: require('@/assets/partenaires/spotify.svg')},
+        {name: 'Ile de France', picture: require('@/assets/partenaires/iledefrance.svg')},
+        {name: 'Nursultan', picture: require('@/assets/partenaires/nursultan.svg')},
+        {name: 'Choke Notes', picture: require('@/assets/partenaires/chokenotes.svg')},
+        {name: 'Taylor', picture: require('@/assets/partenaires/taylor.svg')},
+        {name: 'Victoria', picture: require('@/assets/partenaires/victoria.svg')},
+        {name: 'Belmont', picture: require('@/assets/partenaires/belmont.svg')},
+        {name: 'Van Gordon', picture: require('@/assets/partenaires/vangordon.svg')},
+        {name: 'Sfamily', picture: require('@/assets/partenaires/sfamily.svg')},
+        {name: 'Mercedes-Benz', picture: require('@/assets/partenaires/mercedesbenz.svg')},
+        {name: 'Marbary', picture: require('@/assets/partenaires/marbary.svg')},
       ],
     }
   }
@@ -35,5 +30,12 @@ export default {
 </script>
 
 <style>
+.partenaireImg {
+  width: 85%;
+  height: 85%;
+}
 
+.partenaireItem {
+  width: 33%;
+}
 </style>

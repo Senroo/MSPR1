@@ -1,9 +1,6 @@
 <template>
   <div id="searchbar">
-    <div v-for="(artists,index) in artist" :key="index">
-      <p>{{artists.name}}</p>
-      <img :src=artists.picture>
-    </div>
+    <input type="search" placeholder="Trouver un partenaire" class="form-control w-75 rounded mx-auto mt-5 text-center">
   </div>
 </template>
 
