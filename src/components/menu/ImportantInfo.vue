@@ -12,7 +12,7 @@ export default {
 
 <style>
 #news{
-    width: 100vw;
+    width:100%;
     height: 20vh;
     background: red!important;
 }
