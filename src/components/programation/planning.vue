@@ -5,6 +5,7 @@
     <option value="musique">Musique</option>
     <option value="film">Film</option>
     <option value="idk">IDK</option>
+    <option value="idk">Reset</option>
   </select>
   
   <select v-model="selectedSize">
@@ -12,6 +13,8 @@
     <option value="samedi">Samedi</option>
     <option value="dimanche">Dimanche</option>
   </select>
+
+  <button @click="shut()">Reset</button>
 
 </div>
   <ul>
@@ -54,6 +57,13 @@ export default {
     ],
     }
   },
+  methods: {
+
+      shut(){
+        this.selectedType = undefined;
+        this.selectedSize = undefined;
+      }
+  },
   computed: {
     computed_items: function () {
       let filterType= this.selectedType,
@@ -63,6 +73,7 @@ export default {
         if(filterType && filterType.length > 0){
           filtered = item.type == filterType
         }
+
         if(filtered){
           if(filterSize && filterSize.length > 0){
             filtered = item.jour == filterSize

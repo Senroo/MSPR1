@@ -1,5 +1,3 @@
-
-
 <template>
   <div id="slider">
     <vueper-slides>
@@ -63,5 +61,6 @@ export default {
 }
 
 #slider {
+  
 }
 </style>
