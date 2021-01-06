@@ -3,7 +3,6 @@
     <News/>
     <Slider/>
     <img class="billet" src="@/assets/banner/banner.png">
-    <Carte/>
   </div>
 </template>
 

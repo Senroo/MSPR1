@@ -1,7 +1,6 @@
 <template>
   <div>
-      <planning><p>fefefefe </p></planning>
-      <p>ddddddd </p>
+      <planning></planning>
   </div>
 </template>
 
