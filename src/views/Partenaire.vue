@@ -7,7 +7,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import Searchbar from '@/components/partenaires/searchbar.vue'
 import Partenaire from '@/components/partenaires/liste.vue'
 
