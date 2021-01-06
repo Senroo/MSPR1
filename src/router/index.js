@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Partenaire from '../views/Partenaire.vue';
+import Faq from '../views/Faq.vue';
 
 Vue.use(VueRouter)
 
@@ -37,6 +38,11 @@ const routes = [
         name: 'Partenaire',
         component: Partenaire,
     },
+    {
+        path:'/Faq',
+        name: 'Faq',
+        component: Faq,
+    }
 
 ]
 

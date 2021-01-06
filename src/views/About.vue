@@ -13,21 +13,21 @@ export default {
     return {
       myItems: [
         {
-          title: "How many time zones are there in all?",
+          title: "Combien de temps dure le festival ?",
           value:
-            "Given a 24-hour day and 360 degrees of longitude around the Earth",
-          category: "Tab-1"
+            "Le festival dure sur 3 jours !",
+          category: "Le festival"
         },
         {
           title: "How long is a day and year on Venus?",
           value:
             "Venus takes 224.7 Earth days to complete one orbit around the Sun.",
-          category: "Tab-2"
+          category: "Le lieu"
         },
         {
           title: "What animal smells like popcorn?",
           value: "Binturongs smell like popcorn.",
-          category: "Tab-2"
+          category: "Le lieu"
         }
       ]
     };
