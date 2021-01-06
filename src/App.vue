@@ -18,27 +18,17 @@
 
     <router-view></router-view>
 
-    <News/>
-    <Slider/>
-    <Carte/>
-
   </div>
 </template>
 <script>
 import Burger from "./components/menu/burger.vue";
 import Sidebar from "./components/menu/sidebar.vue";
-import Slider from "./components/artites/slider.vue";
-import News from "./components/menu/ImportantInfo.vue";
-import Carte from "./components/carte/carte.vue";
 
 export default {
   name: "app",
   components: {
     Burger,
     Sidebar,
-    Slider,
-    News,
-    Carte,
   },
 };
 </script>
