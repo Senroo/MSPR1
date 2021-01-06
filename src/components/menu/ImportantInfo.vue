@@ -5,15 +5,17 @@
 </template>
 
 <script>
-export default {
 
-}
 </script>
 
 <style>
 #news{
     width:100%;
-    height: 20vh;
+    height: 10vh;
     background: red!important;
+}
+
+.billet{
+  width: 100%;
 }
 </style>

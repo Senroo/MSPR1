@@ -1,41 +1,36 @@
 <template>
   <div id="slider">
-    <div v-for="(artists,index) in artist" :key="index">
-      <p>{{ artists.name }}</p>
-      <img :src=artists.picture class="sliderImg">
-    </div>
+    <vueper-slides>
+      <vueper-slide
+        v-for="(slide, i) in slides"
+        :key="i"
+        :title="slide.title"
+        :content="slide.content"
+      />
+    </vueper-slides>
   </div>
 </template>
 
 <script>
 /*import axios from 'axios';*/
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
 
 export default {
+  components: { VueperSlides, VueperSlide },
   data() {
     return {
-      artist: [
+      slides: [
         {
-          id: 1,
-          name: 'romain',
-          picture: require('@/assets/artists/romain.jpg'),
+          title: "Slide #1",
+          content: "Slide content.",
         },
         {
-          id: 2,
-          name: 'yann',
-          picture: require('@/assets/artists/yann.jpg'),
-        },
-        {
-          id: 3,
-          name: 'vincent',
-          picture: require('@/assets/artists/vincent.jpg'),
-        },
-        {
-          id: 4,
-          name: 'alex',
-          picture: require('@/assets/artists/alex.jpg'),
-        },
+          title: "Slide #2",
+          content: "je suis un artiste",
+        }
       ],
-    }
+    };
   },
 
   /* mounted () {
@@ -55,7 +50,7 @@ export default {
     console.error(error);
   });
    }*/
-}
+};
 </script>
 
 <style>
@@ -65,6 +60,5 @@ export default {
 }
 
 #slider {
-
 }
 </style>
