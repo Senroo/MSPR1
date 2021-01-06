@@ -53,7 +53,7 @@ export default {
 #faq{
 margin-left: auto;
     margin-right: auto;
-    width: 50em;
+    width: 100%;
 border-color: red;
 
 }
