@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="main-nav">
       <div class="logo">
-        <img width="20%" src="./assets/logo.svg" />
+        <img width="20%" src="./assets/logo.svg"/>
       </div>
       <Burger></Burger>
     </nav>
@@ -15,10 +15,13 @@
         <li><router-link to="/contact">Contact</router-link></li>
       </ul>
     </Sidebar>
+
     <router-view></router-view>
-    <News />
-    <Slider />
-    <Carte />
+
+    <News/>
+    <Slider/>
+    <Carte/>
+
   </div>
 </template>
 <script>
@@ -48,7 +51,7 @@ body {
   border: 0;
   margin: 0;
   padding: 0;
-  font-family: "Lato";
+  font-family: "Lato",serif;
   height: 100%;
   background: rgb(101, 31, 87);
   background: linear-gradient(
@@ -63,7 +66,7 @@ body {
   align-self: center;
   color: #fff;
   font-weight: bold;
-  font-family: "Lato";
+  font-family: "Lato",serif;
 }
 
 .main-nav {
