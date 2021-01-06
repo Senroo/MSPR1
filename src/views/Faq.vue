@@ -1,5 +1,10 @@
 <template>
-  <VueFaqAccordion :items="myItems"/>
+ <div id="faq" class="faq">
+    <h1 class="h1 text-center mt-4">Frequently asked question</h1>
+    
+  <VueFaqAccordion :items="myItems"/> 
+
+   </div>
 </template>
 
 <script>
@@ -38,5 +43,11 @@ export default {
 <style>
 * {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
+  border-color: blue;
+}
+#faq{
+margin-left: auto;
+    margin-right: auto;
+    width: 50em
 }
 </style>
