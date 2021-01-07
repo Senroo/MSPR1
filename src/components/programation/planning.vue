@@ -33,7 +33,8 @@
         :key="index"
         class="Item"
       >
-        <img class="ItemImg mb-4 pr-2" :src="item.image" />
+       <router-link :to="{ name: 'info', params: { name: item.name } }"><img class="ItemImg mb-4 pr-2" :src="item.image" /></router-link>
+       <router-view></router-view>
       </div>
     </div>
   </div>
@@ -47,24 +48,28 @@ export default {
       selectedSize: "",
       items: [
         {
+          id: 1,
           name: "Damso",
           type: "rap",
           jour: "vendredi",
           image: require("@/assets/artists/damso.svg"),
         },
         {
+          id:2,
           name: "Ninho",
           type: "rap",
           jour: "samedi",
           image: require("@/assets/artists/ninho.svg"),
         },
         {
+          id:3,
           name: "Dua Lipa",
           type: "pop",
           jour: "dimanche",
           image: require("@/assets/artists/dua lipa.svg"),
         },
         {
+          id:4,
           name: "Dj snake",
           type: "electro",
           jour: "vendredi",

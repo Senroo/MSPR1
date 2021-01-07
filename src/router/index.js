@@ -6,6 +6,8 @@ import Faq from '../views/Faq.vue';
 
 Vue.use(VueRouter)
 
+
+
 const routes = [
     {
         path: '/',
@@ -53,11 +55,20 @@ const routes = [
         component: () => import(/* webpackChunkName: "about" */ '../views/Programation.vue')
     },
 
+    {
+        path: '/artiste-info?name=:name',
+        name: 'info',
+        params: true,
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import(/* webpackChunkName: "about" */ '../views/ArtisteInfo.vue')
+    },
+
 ]
 
 const router = new VueRouter({
     mode: 'history',
     routes
 })
-
 export default router
