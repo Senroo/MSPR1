@@ -1,26 +1,39 @@
 <template>
   <div id="planning">
-    <select v-model="selectedType">
-      <option value="musique">Musique</option>
-      <option value="film">Film</option>
-      <option value="idk">IDK</option>
-      <option value="idk">Reset</option>
-    </select>
+    <div class="filtre">
+    <div class="filtre1 mr-5 ml-4 mt-2">
+      <p>Genre</p>
+      <select class="" v-model="selectedType">
+        <option value="rap">Rap</option>
+        <option value="pop">Pop</option>
+        <option value="electro">Electro</option>
+        <option value="idk">...</option>
+      </select>
+    </div>
 
-    <select v-model="selectedSize">
-      <option value="vendredi">Vendredi</option>
-      <option value="samedi">Samedi</option>
-      <option value="dimanche">Dimanche</option>
-    </select>
-
-    <button @click="shut()">Reset</button>
-    <div class="container-block mt-5">
+    <div class="filtre2 mt-2">
+      <p>Date</p>
+      <select class="" v-model="selectedSize">
+        <option value="vendredi">Vendredi</option>
+        <option value="samedi">Samedi</option>
+        <option value="dimanche">Dimanche</option>
+      </select>
+    </div>
+    <div class="reset mt-5">
+    <button class="btn-primary ml-5" @click="shut()">Reset</button>
+    </div>
+        </div>
+    <div
+      id="item-artistes"
+      class="d-flex flex-wrap justify-content-around text-center mt-5"
+    >
       <div
         id="container-artist"
         v-for="(item, index) in computed_items"
         :key="index"
+        class="Item"
       >
-        <img class="img mb-4 pr-2" :src="item.image" />
+        <img class="ItemImg mb-4 pr-2" :src="item.image" />
       </div>
     </div>
   </div>
@@ -35,25 +48,25 @@ export default {
       items: [
         {
           name: "Damso",
-          type: "musique",
+          type: "rap",
           jour: "vendredi",
           image: require("@/assets/artists/damso.svg"),
         },
         {
           name: "Ninho",
-          type: "idk",
+          type: "rap",
           jour: "samedi",
           image: require("@/assets/artists/ninho.svg"),
         },
         {
           name: "Dua Lipa",
-          type: "film",
+          type: "pop",
           jour: "dimanche",
           image: require("@/assets/artists/dua lipa.svg"),
         },
         {
           name: "Dj snake",
-          type: "musique",
+          type: "electro",
           jour: "vendredi",
           image: require("@/assets/artists/dj snake.svg"),
         },
@@ -89,11 +102,21 @@ export default {
 </script>
 
 <style>
-.img {
-  width: 100%;
+.ItemImg {
+  width: 85%;
+  height: 85%;
 }
 
 .container-block {
   display: flex;
 }
+
+.Item {
+  width: 33%;
+}
+
+.filtre{
+  display: flex;
+}
+
 </style>
