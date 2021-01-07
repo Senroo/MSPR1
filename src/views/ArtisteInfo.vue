@@ -1,5 +1,9 @@
 <template>
+ <div class="artist-info">
   <pre>{{ InfoArtist}}</pre>
+  <router-link to="/programation">Retour</router-link>
+  <router-view></router-view>
+  </div>
 </template>
 
 <script>
