@@ -20,6 +20,8 @@ Vue.use(IconsPlugin);
 // Import FontAwesome CSS/JS Files
 import "@fortawesome/fontawesome-free/css/all.css";
 
+import './registerServiceWorker'
+
 Vue.config.productionTip = false;
 
 new Vue({
