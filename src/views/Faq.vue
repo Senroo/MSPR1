@@ -73,9 +73,7 @@ margin-left: auto;
 border-color: red;
 
 }
-.faq__nav-item{
-active-color: #323A61;
-}
+
 #faq nav.faq__nav{
   border-color: #323A61!important;
   border-radius: 50px;
@@ -87,9 +85,9 @@ active-color: #323A61;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 }
-.faq__nav:nth-child(2){
-border-top-right-radius: 50px!important;
-border-bottom-right-radius: 50px!important;
+
+.faq__nav-item_active:nth-child(2) {
+  border-radius: 0px 50px 50px 0px;
 }
 .accordion__item{
   background-color: #323A61!important; 
