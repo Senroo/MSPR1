@@ -1,40 +1,32 @@
 <template>
   <div id="planning">
     <div class="filtre">
-    <div class="filtre1 mr-5 ml-4 mt-2">
-      <p>Genre</p>
-      <select class="" v-model="selectedType">
-        <option value="rap">Rap</option>
-        <option value="pop">Pop</option>
-        <option value="electro">Electro</option>
-        <option value="idk">...</option>
-      </select>
-    </div>
+      <div class="filtre1 mr-5 ml-4 mt-2">
+        <p>Genre</p>
+        <select class="form-control" v-model="selectedType">
+          <option value="rap">Rap</option>
+          <option value="pop">Pop</option>
+          <option value="electro">Electro</option>
+          <option value="idk">...</option>
+        </select>
+      </div>
 
-    <div class="filtre2 mt-2">
-      <p>Date</p>
-      <select class="" v-model="selectedSize">
-        <option value="vendredi">Vendredi</option>
-        <option value="samedi">Samedi</option>
-        <option value="dimanche">Dimanche</option>
-      </select>
+      <div class="filtre2 mt-2">
+        <p>Date</p>
+        <select class="form-control" v-model="selectedSize">
+          <option value="vendredi">Vendredi</option>
+          <option value="samedi">Samedi</option>
+          <option value="dimanche">Dimanche</option>
+        </select>
+      </div>
+      <div class="reset mt-5">
+        <button class="btn btn-primary ml-5" @click="shut()">Reset</button>
+      </div>
     </div>
-    <div class="reset mt-5">
-    <button class="btn-primary ml-5" @click="shut()">Reset</button>
-    </div>
-        </div>
-    <div
-      id="item-artistes"
-      class="d-flex flex-wrap justify-content-around text-center mt-5"
-    >
-      <div
-        id="container-artist"
-        v-for="(item, index) in computed_items"
-        :key="index"
-        class="Item"
-      >
-       <router-link :to="{ name: 'info', params: { name: item.name } }"><img class="ItemImg mb-4 pr-2" :src="item.image" /></router-link>
-       <router-view></router-view>
+    <div id="item-artistes" class="d-flex flex-wrap justify-content-around text-center mt-5">
+      <div id="container-artist" v-for="(item, index) in computed_items" :key="index" class="Item">
+        <router-link :to="{ name: 'info', params: { name: item.name } }"><img class="ItemImg mb-4 pr-2" :src="item.image" /></router-link>
+        <router-view></router-view>
       </div>
     </div>
   </div>
@@ -87,16 +79,16 @@ export default {
   computed: {
     computed_items: function() {
       let filterType = this.selectedType,
-        filterSize = this.selectedSize;
+          filterSize = this.selectedSize;
       return this.items.filter(function(item) {
         let filtered = true;
         if (filterType && filterType.length > 0) {
-          filtered = item.type == filterType;
+          filtered = item.type === filterType;
         }
 
         if (filtered) {
           if (filterSize && filterSize.length > 0) {
-            filtered = item.jour == filterSize;
+            filtered = item.jour === filterSize;
           }
         }
         return filtered;

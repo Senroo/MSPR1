@@ -1,15 +1,16 @@
 <template>
   <div>
-      <planning></planning>
+    <planning></planning>
   </div>
 </template>
 
 <script>
-import planning from"../components/programation/planning.vue"
+import planning from "../components/programation/planning.vue"
+
 export default {
-components:{
+  components: {
     planning,
-}
+  }
 }
 </script>
 
