@@ -2,7 +2,7 @@
   <div class="home">
     <News/>
     <Slider/>
-    <img class="billet" src="@/assets/banner/banner.png">
+    <img class="billet" src="@/assets/banner/banner.svg">
   </div>
 </template>
 
