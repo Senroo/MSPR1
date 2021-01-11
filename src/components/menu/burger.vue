@@ -34,6 +34,7 @@ button {
   cursor: pointer;
 }
 
+
 /* remove blue outline */
 button:focus {
   outline: 0;
