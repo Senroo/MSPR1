@@ -1,5 +1,6 @@
 <template>
   <div id="slider">
+    
     <vueper-slides>
       <vueper-slide
         v-for="(slide, i) in slides"
@@ -8,9 +9,10 @@
         :content="slide.content"
       />
     </vueper-slides>
+
   </div>
 </template>
-
+   
 <script>
 /*import axios from 'axios';*/
 import { VueperSlides, VueperSlide } from 'vueperslides'
@@ -30,9 +32,14 @@ export default {
           content: "je suis un artiste",
         }
       ],
+      
     };
   },
+methods(){
 
+
+
+}
   /* mounted () {
   var options = {
     method: 'GET',
@@ -61,6 +68,7 @@ export default {
 }
 
 #slider {
+  background: #7673FE;
   
 }
 </style>

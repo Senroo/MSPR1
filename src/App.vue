@@ -2,19 +2,21 @@
   <div id="app">
     <nav class="main-nav">
       <div class="logo">
-        <img width="20%" src="./assets/logo.svg"/>
+        <img src="./assets/logo.svg"/>
       </div>
       <Burger></Burger>
     </nav>
 
     <Sidebar>
       <ul class="sidebar-panel-nav">
-        <li><router-link to="/">Home</router-link></li>
+        <img class="mb-5" src="./assets/logo.svg"/>
+        <li><router-link to="/">Accueil</router-link></li>
+        <li><router-link to="/programation">Programation</router-link></li>
         <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/partenaire">Partenaires</router-link></li>
         <li><router-link to="/contact">Contact</router-link></li>
         <li><router-link to="/Faq">FAQ</router-link></li>
-        <li><router-link to="/programation">Programation</router-link></li>
+
 
       </ul>
     </Sidebar>
@@ -39,20 +41,19 @@ export default {
 html {
   height: 100%;
 }
-
+ul img{
+  width: 90%;
+}
+.logo img{
+  width: 25%;
+}
 body {
   border: 0;
   margin: 0;
   padding: 0;
   font-family: "Lato",serif;
   height: 100%;
-  background: rgb(101, 31, 87);
-  background: linear-gradient(
-    45deg,
-    rgba(101, 31, 87, 1) 0%,
-    rgba(225, 113, 87, 1) 48%,
-    rgba(249, 248, 113, 1) 100%
-  );
+  background: white;
 }
 
 .logo {

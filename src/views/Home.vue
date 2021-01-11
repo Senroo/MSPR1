@@ -19,3 +19,8 @@ export default {
   }
 }
 </script>
+<style>
+.billet{
+  width: 100%;
+}
+</style>
