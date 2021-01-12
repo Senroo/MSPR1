@@ -92,6 +92,7 @@ border-color: red;
 .accordion__item{
   background-color: #323A61!important; 
   border-radius: 50px;
+  margin: 15px 0 15px 0!important;
 }
 .accordion__title{
   color: white!important;
@@ -105,7 +106,7 @@ button .accordion__toggle-button{
   background-color: red!important;
 }
 .accordion{
-  border-color: blue!important;
+  /*border-color: blue!important;*/
 }
 h1{
   color: #4043B4;
