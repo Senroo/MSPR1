@@ -365,7 +365,9 @@ Pop-Urbain" transform="translate(97.037 72.321)" fill="#fff" font-size="12" font
     </div>
 </template>
 <style>
-  svg{width:100%;
+  svg{
+    width:100%;
+    height: 15%;
   }
     
    path#ZONE_A-2:hover ,path#ZONE_B-2:hover,path#ZONE_C-2:hover{fill: rgb(11, 151, 116);}
