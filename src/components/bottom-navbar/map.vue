@@ -158,7 +158,7 @@
             <ellipse cx="30.5" cy="31" rx="29.5" ry="30" fill="none"/>
           </g>
         </g>
-        <path id="Icon_awesome-clinic-medical" data-name="Icon awesome-clinic-medical" d="M15.752,6.812,3.8,18.228a2.5,2.5,0,0,1-.3.2V29.383a.914.914,0,0,0,.875.948H27.129A.914.914,0,0,0,28,29.383V18.429a2.524,2.524,0,0,1-.288-.19ZM21,22.274a.457.457,0,0,1-.438.474H17.5v3.317a.457.457,0,0,1-.438.474H14.44A.457.457,0,0,1,14,26.065V22.748H10.939a.457.457,0,0,1-.438-.474V19.43a.457.457,0,0,1,.438-.474H14V15.639a.457.457,0,0,1,.438-.474h2.625a.457.457,0,0,1,.438.474v3.317h3.063A.457.457,0,0,1,21,19.43ZM31.214,14,17.215.609a2.057,2.057,0,0,0-2.924,0L.29,14a1,1,0,0,0-.066,1.339l1.171,1.411a.829.829,0,0,0,1.236.072L15.174,4.836a.826.826,0,0,1,1.158,0L28.874,16.818a.829.829,0,0,0,1.236-.072l1.17-1.411A1,1,0,0,0,31.214,14Z" transform="translate(15.051 13.817)" fill="#fff"/>
+        <path @click="click()" id="Icon_awesome-clinic-medical" data-name="Icon awesome-clinic-medical" d="M15.752,6.812,3.8,18.228a2.5,2.5,0,0,1-.3.2V29.383a.914.914,0,0,0,.875.948H27.129A.914.914,0,0,0,28,29.383V18.429a2.524,2.524,0,0,1-.288-.19ZM21,22.274a.457.457,0,0,1-.438.474H17.5v3.317a.457.457,0,0,1-.438.474H14.44A.457.457,0,0,1,14,26.065V22.748H10.939a.457.457,0,0,1-.438-.474V19.43a.457.457,0,0,1,.438-.474H14V15.639a.457.457,0,0,1,.438-.474h2.625a.457.457,0,0,1,.438.474v3.317h3.063A.457.457,0,0,1,21,19.43ZM31.214,14,17.215.609a2.057,2.057,0,0,0-2.924,0L.29,14a1,1,0,0,0-.066,1.339l1.171,1.411a.829.829,0,0,0,1.236.072L15.174,4.836a.826.826,0,0,1,1.158,0L28.874,16.818a.829.829,0,0,0,1.236-.072l1.17-1.411A1,1,0,0,0,31.214,14Z" transform="translate(15.051 13.817)" fill="#fff"/>
       </g>
       <g id="A" data-name="ZONE_A" transform="translate(108.379 0)">
         <path id="ZONE_A-2" data-name="ZONE_A" d="M10312.9,5141.534l-48.555,114.792,368.29,123.668s196.994-203.42,210.64-295.227C10844.14,5082.978,10312.9,5141.534,10312.9,5141.534Z" transform="translate(-10264.348 -5084.727)" fill="#30a48f" stroke="#30a48f" stroke-width="1"/>
@@ -182,7 +182,7 @@ Eléctronique" transform="translate(27.222 12.359)" fill="#fff" font-size="12" f
             <path id="Tracé_15" data-name="Tracé 15" d="M9.189,24.75a.38.38,0,0,0-.269.111L7.87,25.912a.949.949,0,0,1-1.342,0L5.477,24.861a.38.38,0,0,0-.269-.111H1.915a.756.756,0,0,0-.748.625,3.1,3.1,0,0,0-.043.514,2.5,2.5,0,0,0,2.243,2.658,3.888,3.888,0,0,0,.815,1.873,3.234,3.234,0,0,0,2.542,1.163h6.263a3.231,3.231,0,0,0,2.542-1.165,3.9,3.9,0,0,0,.815-1.873,2.5,2.5,0,0,0,2.243-2.658,3.1,3.1,0,0,0-.043-.514.756.756,0,0,0-.748-.624Z" transform="translate(-1.125 -8.806)" fill="#fff"/>
           </g>
         </g>
-        <g id="TOILETTE" transform="translate(268.109 63.421)">
+        <g @click="toilet1()" id="TOILETTE" transform="translate(268.109 63.421)">
           <g transform="matrix(1, 0, 0, 1, -436.05, -123.15)" filter="url(#Ellipse_53-4)">
             <g id="Ellipse_53-18" data-name="Ellipse 53" transform="translate(436.36 123)" fill="#52cef2" stroke="#fff" stroke-width="2">
               <ellipse cx="20.5" cy="21" rx="20.5" ry="21" stroke="none"/>
@@ -199,7 +199,7 @@ Eléctronique" transform="translate(27.222 12.359)" fill="#fff" font-size="12" f
         </g>
         <g id="BAR" transform="translate(289.596 109.261)">
           <g transform="matrix(1, 0, 0, 1, -457.54, -168.99)" filter="url(#Ellipse_53-5)">
-            <g id="Ellipse_53-19" data-name="Ellipse 53" transform="translate(457.36 169)" fill="#5262f2" stroke="#fff" stroke-width="2">
+            <g @click="bar4()" id="Ellipse_53-19" data-name="Ellipse 53" transform="translate(457.36 169)" fill="#5262f2" stroke="#fff" stroke-width="2">
               <circle cx="21" cy="21" r="21" stroke="none"/>
               <circle cx="21" cy="21" r="20" fill="none"/>
             </g>
@@ -218,7 +218,7 @@ Rock" transform="translate(32.222 12.359)" fill="#fff" font-size="12" font-famil
 Variété francaise" transform="translate(9.222 15.359)" fill="#fff" font-size="12" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0" xml:space="preserve">           Scène</tspan><tspan font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="15">Variété francaise</tspan></tspan></text>
           <path id="Icon_awesome-music-3" data-name="Icon awesome-music" d="M28.674,1.793A1.791,1.791,0,0,0,26.344.084L8.423,5.376A1.792,1.792,0,0,0,7.169,7.084V21.725a7.747,7.747,0,0,0-1.792-.22C2.407,21.505,0,23.11,0,25.09s2.407,3.584,5.376,3.584,5.376-1.6,5.376-3.584V12L25.09,7.8v10.34a7.747,7.747,0,0,0-1.792-.22c-2.969,0-5.376,1.6-5.376,3.584S20.328,25.09,23.3,25.09s5.376-1.6,5.376-3.584V1.793Z" transform="translate(43.992 43.646)" fill="#fff"/>
         </g>
-        <g id="TOILETTE-2" data-name="TOILETTE" transform="translate(472.109 65.421)">
+        <g @click="toilet2()" id="TOILETTE-2" data-name="TOILETTE" transform="translate(472.109 65.421)">
           <g transform="matrix(1, 0, 0, 1, -640.05, -125.15)" filter="url(#Ellipse_53-6)">
             <g id="Ellipse_53-20" data-name="Ellipse 53" transform="translate(640.36 125)" fill="#52cef2" stroke="#fff" stroke-width="2">
               <ellipse cx="20.5" cy="21" rx="20.5" ry="21" stroke="none"/>
@@ -233,7 +233,7 @@ Variété francaise" transform="translate(9.222 15.359)" fill="#fff" font-size="
             <line id="Ligne_19-2" data-name="Ligne 19" y2="22.92" transform="translate(11.546 0.74)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
           </g>
         </g>
-        <g id="BAR-2" data-name="BAR" transform="translate(510.597 33.261)">
+        <g @click="bar2()" id="BAR-2" data-name="BAR" transform="translate(510.597 33.261)">
           <g transform="matrix(1, 0, 0, 1, -678.54, -92.99)" filter="url(#Ellipse_53-7)">
             <g id="Ellipse_53-21" data-name="Ellipse 53" transform="translate(678.36 93)" fill="#5262f2" stroke="#fff" stroke-width="2">
               <circle cx="21" cy="21" r="21" stroke="none"/>
@@ -281,7 +281,7 @@ Variété francaise" transform="translate(9.222 15.359)" fill="#fff" font-size="
             <path id="Tracé_15-3" data-name="Tracé 15" d="M9.189,24.75a.38.38,0,0,0-.269.111L7.87,25.912a.949.949,0,0,1-1.342,0L5.477,24.861a.38.38,0,0,0-.269-.111H1.915a.756.756,0,0,0-.748.625,3.1,3.1,0,0,0-.043.514,2.5,2.5,0,0,0,2.243,2.658,3.888,3.888,0,0,0,.815,1.873,3.234,3.234,0,0,0,2.542,1.163h6.263a3.231,3.231,0,0,0,2.542-1.165,3.9,3.9,0,0,0,.815-1.873,2.5,2.5,0,0,0,2.243-2.658,3.1,3.1,0,0,0-.043-.514.756.756,0,0,0-.748-.624Z" transform="translate(-1.125 -8.806)" fill="#fff"/>
           </g>
         </g>
-        <g id="TOILETTE-3" data-name="TOILETTE" transform="translate(199.561 79.874)">
+        <g @click="toilet3()" id="TOILETTE-3" data-name="TOILETTE" transform="translate(199.561 79.874)">
           <g transform="matrix(1, 0, 0, 1, -259.12, -372.41)" filter="url(#Ellipse_53-10)">
             <g id="Ellipse_53-24" data-name="Ellipse 53" transform="translate(259.36 372)" fill="#52cef2" stroke="#fff" stroke-width="2">
               <ellipse cx="20.5" cy="21" rx="20.5" ry="21" stroke="none"/>
@@ -296,7 +296,7 @@ Variété francaise" transform="translate(9.222 15.359)" fill="#fff" font-size="
             <line id="Ligne_19-3" data-name="Ligne 19" y2="22.92" transform="translate(11.546 0.74)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
           </g>
         </g>
-        <g id="BAR-3" data-name="BAR" transform="translate(221.048 125.714)">
+        <g @click="bar3()" id="BAR-3" data-name="BAR" transform="translate(221.048 125.714)">
           <g transform="matrix(1, 0, 0, 1, -280.61, -418.25)" filter="url(#Ellipse_53-11)">
             <g id="Ellipse_53-25" data-name="Ellipse 53" transform="translate(280.36 418)" fill="#5262f2" stroke="#fff" stroke-width="2">
               <circle cx="21" cy="21" r="21" stroke="none"/>
@@ -334,7 +334,7 @@ Pop-Urbain" transform="translate(97.037 72.321)" fill="#fff" font-size="12" font
             <path id="Tracé_15-4" data-name="Tracé 15" d="M9.189,24.75a.38.38,0,0,0-.269.111L7.87,25.912a.949.949,0,0,1-1.342,0L5.477,24.861a.38.38,0,0,0-.269-.111H1.915a.756.756,0,0,0-.748.625,3.1,3.1,0,0,0-.043.514,2.5,2.5,0,0,0,2.243,2.658,3.888,3.888,0,0,0,.815,1.873,3.234,3.234,0,0,0,2.542,1.163h6.263a3.231,3.231,0,0,0,2.542-1.165,3.9,3.9,0,0,0,.815-1.873,2.5,2.5,0,0,0,2.243-2.658,3.1,3.1,0,0,0-.043-.514.756.756,0,0,0-.748-.624Z" transform="translate(-1.125 -8.806)" fill="#fff"/>
           </g>
         </g>
-        <g id="TOILETTE-4" data-name="TOILETTE" transform="translate(78.115 145.803)">
+        <g @click="toilet4()" id="TOILETTE-4" data-name="TOILETTE" transform="translate(78.115 145.803)">
           <g transform="matrix(1, 0, 0, 1, -741.05, -210.15)" filter="url(#Ellipse_53-13)">
             <g id="Ellipse_53-27" data-name="Ellipse 53" transform="translate(741.36 210)" fill="#52cef2" stroke="#fff" stroke-width="2">
               <ellipse cx="20.5" cy="21" rx="20.5" ry="21" stroke="none"/>
@@ -349,7 +349,7 @@ Pop-Urbain" transform="translate(97.037 72.321)" fill="#fff" font-size="12" font
             <line id="Ligne_19-4" data-name="Ligne 19" y2="22.92" transform="translate(11.546 0.74)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
           </g>
         </g>
-        <g id="BAR-4" data-name="BAR" transform="translate(99.603 191.643)">
+        <g @click="bar()" id="BAR-4" data-name="BAR" transform="translate(99.603 191.643)">
           <g transform="matrix(1, 0, 0, 1, -762.54, -255.99)" filter="url(#Ellipse_53-14)">
             <g id="Ellipse_53-28" data-name="Ellipse 53" transform="translate(762.36 256)" fill="#5262f2" stroke="#fff" stroke-width="2">
               <circle cx="21" cy="21" r="21" stroke="none"/>
@@ -364,8 +364,57 @@ Pop-Urbain" transform="translate(97.037 72.321)" fill="#fff" font-size="12" font
 </svg>
     </div>
 </template>
-<style>
+<script>
+export default {
+  data(){
+    return {
+      }
+  },
+  methods: {
+    click: function(){
+      alert('Je suis l\'acceuil')
+    },
+
+    bar: function(){
+      alert('Bar 1')
+    },
+
+    bar2: function(){
+      alert('Bar 2')
+      },
+
+    bar3: function(){
+      alert('Bar 3')
+      },
+
+    bar4: function(){
+      alert('Bar 4')
+      },
+
+    
+    toilet1: function(){
+      alert('toilet1')
+    },
+
+    toilet2: function(){
+      alert('toilet2')
+    },
+
+    toilet3: function(){
+      alert('toilet3')
+    },
+
+    toilet4: function(){
+      alert('toiler4')
+    },
+
+    }
+}
+</script>
+<style scoped>
+
   svg{
+
     width:100%;
     height: 15%;
   }
