@@ -20,12 +20,11 @@
     </Sidebar>
     <router-view></router-view>
 
-    <Footer/>
+
 
   </div>
 </template>
 <script>
-import Footer from "./components/footer/Footer.vue";
 import Burger from "./components/menu/burger.vue";
 import Sidebar from "./components/menu/sidebar.vue";
 
@@ -34,7 +33,6 @@ export default {
   components: {
     Burger,
     Sidebar,
-    Footer,
   },
 };
 </script>

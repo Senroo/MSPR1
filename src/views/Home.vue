@@ -6,11 +6,13 @@
     <h2 class="titre-carte mt-4">Bienvenue dans la nation !</h2>
     <hr>
     <Map/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import Footer from "../components/footer/Footer.vue";
 import Slider from "../components/artites/slider.vue";
 import News from "../components/menu/ImportantInfo.vue";
 import Map from "../components/bottom-navbar/map.vue"; 
@@ -22,6 +24,7 @@ export default {
     Slider,
     News,
     Map,
+    Footer,
   }
 }
 </script>
@@ -31,6 +34,7 @@ export default {
 }
 .titre-carte{
   font-size: 1.5em;
+  text-align: center;
 }
 
 </style>
