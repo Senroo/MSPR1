@@ -74,14 +74,53 @@
 </template>
 
 <script>
+  import {
+    mdbContainer,
+    mdbInput,
+    mdbCard,
+    mdbCardTitle,
+    mdbCardText,
+    mdbCardBody,
+    mdbIcon,
+    mdbBtn,
+    mdbRow,
+    mdbCol
+  } from "mdbvue";
 
-export default {
-
-}
+  export default {
+    components: {
+      mdbContainer,
+      mdbInput,
+      mdbCard,
+      mdbCardTitle,
+      mdbCardBody,
+      mdbCardText,
+      mdbIcon,
+      mdbBtn,
+      mdbRow,
+      mdbCol
+    },
+    data() {
+      return {
+        fields: {
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
+        }
+      };
+    },
+    methods: {
+      submitForm(event) {
+        event.target.classList.add("was-validated");
+        // submit form
+      }
+    }
+  };
 </script>
 
-<style>
-.image_contact{
-    width: 100%;
-}
+<style scoped>
+  .container {
+    text-align: center;
+  }
 </style>
