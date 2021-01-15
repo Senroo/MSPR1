@@ -24,9 +24,10 @@ export default {
 }
 </script>
 <style>
-ul.sidebar-panel-nav  li  a{
-  color: black!important;
+ul.sidebar-panel-nav li a {
+  color: black !important;
 }
+
 .slide-enter-active,
 .slide-leave-active {
   transition: transform 0.2s ease;
@@ -50,7 +51,7 @@ ul.sidebar-panel-nav  li  a{
 
 .sidebar-panel {
   overflow-y: auto;
-  background-color:white;
+  background-color: white;
   position: fixed;
   left: 0;
   top: 0;

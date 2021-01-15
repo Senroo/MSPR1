@@ -1,25 +1,25 @@
 <template>
   <div id="slider">
-    
+
     <vueper-slides>
       <vueper-slide
-        v-for="(slide, i) in slides"
-        :key="i"
-        :title="slide.title"
-        :content="slide.content"
+          v-for="(slide, i) in slides"
+          :key="i"
+          :title="slide.title"
+          :content="slide.content"
       />
     </vueper-slides>
 
   </div>
 </template>
-   
+
 <script>
 /*import axios from 'axios';*/
-import { VueperSlides, VueperSlide } from 'vueperslides'
+import {VueperSlides, VueperSlide} from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
 export default {
-  components: { VueperSlides, VueperSlide },
+  components: {VueperSlides, VueperSlide},
   data() {
     return {
       slides: [
@@ -32,14 +32,13 @@ export default {
           content: "je suis un artiste",
         }
       ],
-      
+
     };
   },
-methods(){
+  methods() {
 
 
-
-}
+  }
   /* mounted () {
   var options = {
     method: 'GET',
@@ -69,6 +68,6 @@ methods(){
 
 #slider {
   background: #7673FE;
-  
+
 }
 </style>

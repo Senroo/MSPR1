@@ -2,10 +2,10 @@
   <div class="home">
     <News/>
     <Slider/>
-    <img class="billet" src="@/assets/banner/banner.svg"/>
+    <img class="billet" src="@/assets/banner/banner.svg" alt="banner"/>
     <h2 class="titre-carte mt-4">Bienvenue dans la nation !</h2>
     <hr>
-    <img class="billet mt-2" src="@/assets/banner/Carte.svg"/>
+    <img class="billet mt-2" src="@/assets/banner/Carte.svg" alt="carte"/>
   </div>
 </template>
 
@@ -23,10 +23,11 @@ export default {
 }
 </script>
 <style>
-.billet{
+.billet {
   width: 100%;
 }
-.titre-carte{
+
+.titre-carte {
   font-size: 1.5em;
 }
 

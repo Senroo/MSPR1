@@ -1,8 +1,8 @@
 <template>
- <div class="artist-info">
-  <pre>{{ InfoArtist}}</pre>
-  <router-link to="/programation">Retour</router-link>
-  <router-view></router-view>
+  <div class="artist-info">
+    <pre>{{ InfoArtist }}</pre>
+    <router-link to="/programmation">Retour</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -49,8 +49,7 @@ export default {
     console.log(name);
 
     axios.get('/test.json').then(response =>
-    this.InfoArtist = response.data)
-
+        this.InfoArtist = response.data)
 
 
   },

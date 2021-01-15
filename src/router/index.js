@@ -7,7 +7,6 @@ import Faq from '../views/Faq.vue';
 Vue.use(VueRouter)
 
 
-
 const routes = [
     {
         path: '/',
@@ -41,18 +40,18 @@ const routes = [
         component: Partenaire,
     },
     {
-        path:'/Faq',
+        path: '/Faq',
         name: 'Faq',
         component: Faq,
     }
-,
+    ,
     {
-        path: '/programation',
-        name: 'Programation',
+        path: '/programmation',
+        name: 'Programmation',
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/Programation.vue')
+        component: () => import(/* webpackChunkName: "about" */ '../views/Programmation.vue')
     },
 
     {

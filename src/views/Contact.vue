@@ -3,7 +3,7 @@
     <h1 class="contact-titre">Vous voulez contacter la nation ?</h1>
     <div class="container-contact">
       <div class="image-contact">
-        <img class="image_contact" src="@/assets/artists/angele.svg" />
+        <img class="image_contact" src="@/assets/artists/angele.svg"/>
       </div>
       <div class="contact-form">
         <mdb-container class="mt-5">
@@ -11,50 +11,51 @@
             <mdb-card-title class="mt-4 h2">Contact us</mdb-card-title>
             <mdb-card-body>
               <mdb-card-text class="pr-5 pl-5" mr-4 ml-4
-                >Do you have any questions? Please do not hesitate to contact us
-                directly. Our team will cgetback to you within a matter of hours
-                to help yoddu.</mdb-card-text
+              >Do you have any questions? Please do not hesitate to contact us
+                directly. Our team will get back to you within a matter of hours
+                to help you.
+              </mdb-card-text
               >
               <form
-                class="needs-validation"
-                novalidate
-                @submit.prevent="submitForm"
+                  class="needs-validation"
+                  novalidate
+                  @submit.prevent="submitForm"
               >
                 <mdb-row>
                   <mdb-col md="8">
                     <mdb-row>
                       <mdb-col>
                         <mdb-input
-                          label="Your name"
-                          v-model="fields.name"
-                          required
+                            label="Your name"
+                            v-model="fields.name"
+                            required
                         />
                       </mdb-col>
                       <mdb-col>
                         <mdb-input
-                          type="email"
-                          label="Your email"
-                          v-model="fields.email"
-                          required
-                        />
-                      </mdb-col>
-                    </mdb-row>
-                    <mdb-row>
-                      <mdb-col>
-                        <mdb-input
-                          label="Subject"
-                          v-model="fields.subject"
-                          required
+                            type="email"
+                            label="Your email"
+                            v-model="fields.email"
+                            required
                         />
                       </mdb-col>
                     </mdb-row>
                     <mdb-row>
                       <mdb-col>
                         <mdb-input
-                          type="textarea"
-                          label="Your message"
-                          v-model="fields.message"
-                          required
+                            label="Subject"
+                            v-model="fields.subject"
+                            required
+                        />
+                      </mdb-col>
+                    </mdb-row>
+                    <mdb-row>
+                      <mdb-col>
+                        <mdb-input
+                            type="textarea"
+                            label="Your message"
+                            v-model="fields.message"
+                            required
                         />
                       </mdb-col>
                     </mdb-row>
@@ -62,29 +63,30 @@
                   <mdb-col md="4">
                     <mdb-row>
                       <mdb-col class="mt-4">
-                        <mdb-icon icon="map-marker-alt" size="2x" />
+                        <mdb-icon icon="map-marker-alt" size="2x"/>
                         <p>San Francisco, CA 94126, USA</p>
                       </mdb-col>
                     </mdb-row>
                     <mdb-row>
                       <mdb-col class="mt-4">
-                        <mdb-icon icon="phone" size="2x" />
+                        <mdb-icon icon="phone" size="2x"/>
                         <p>+ 01 234 567 89</p>
                       </mdb-col>
                     </mdb-row>
                     <mdb-row>
                       <mdb-col class="mt-4">
-                        <mdb-icon icon="envelope" size="2x" />
+                        <mdb-icon icon="envelope" size="2x"/>
                         <p>contact@mdbootstrap.com</p>
                       </mdb-col>
                     </mdb-row>
                   </mdb-col>
                 </mdb-row>
                 <mdb-btn
-                  color="primary"
-                  type="submit"
-                  class=""
-                  >Send</mdb-btn
+                    color="primary"
+                    type="submit"
+                    class=""
+                >Send
+                </mdb-btn
                 >
               </form>
             </mdb-card-body>
@@ -149,16 +151,16 @@ export default {
     },
 
     submitForm(event) {
-        event.target.classList.add("was-validated");
-        if (this.validate("email", "name", "message", "subject")) {
-          axios
+      event.target.classList.add("was-validated");
+      if (this.validate("email", "name", "message", "subject")) {
+        axios
             .post("/submit", this.fields)
             .then()
             .catch(error => {
               console.log(error);
             });
-        }
       }
+    }
   },
 };
 </script>
@@ -167,9 +169,11 @@ export default {
 .container {
   text-align: center;
 }
+
 .image_contact {
   width: 100%;
 }
+
 .contact-titre {
   font-size: 1.3em;
 }

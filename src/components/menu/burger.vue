@@ -47,7 +47,6 @@ button:focus {
   display: block;
   z-index: 999;
   border: 0;
-  border-radius: 0;
   background-color: rgba(128, 128, 128, 0.192);
   border-radius: 30%;
   pointer-events: all;
