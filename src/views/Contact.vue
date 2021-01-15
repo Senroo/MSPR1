@@ -13,7 +13,7 @@
               <mdb-card-text class="pr-5 pl-5" mr-4 ml-4
                 >Do you have any questions? Please do not hesitate to contact us
                 directly. Our team will cgetback to you within a matter of hours
-                to help you.</mdb-card-text
+                to help yoddu.</mdb-card-text
               >
               <form
                 class="needs-validation"
