@@ -1,6 +1,6 @@
 <template>
   <div id="slider">
-    <vueper-slides>
+    <vueper-slides autoplay>
       <vueper-slide
         v-for="(slide, i) in slides"
         :key="i"
@@ -62,7 +62,7 @@ export default {
 #slider {
   background: linear-gradient(-45deg, #7673fe, #f3ba00, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
@@ -76,4 +76,13 @@ export default {
     background-position: 0% 50%;
   }
 }
+
+.vueperslides__arrows{
+  display:none;
+}
+
+.vueperslides__bullets{
+  display:none;
+}
+
 </style>

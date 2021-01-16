@@ -14,9 +14,9 @@
       <div class="filtre2 mt-2">
         <p>Date</p>
         <select class="form-control" v-model="selectedSize">
-          <option value="vendredi">Vendredi</option>
-          <option value="samedi">Samedi</option>
-          <option value="dimanche">Dimanche</option>
+          <option value="vendredi">Jour 1</option>
+          <option value="samedi">Jour 2</option>
+          <option value="dimanche">Jour 3</option>
         </select>
       </div>
       <div class="reset mt-5">
@@ -62,6 +62,41 @@ export default {
         },
         {
           id:4,
+          name: "Dj snake",
+          type: "electro",
+          jour: "vendredi",
+          image: require("@/assets/artists/dj snake.svg"),
+        },
+                {
+          id:5,
+          name: "Dj snake",
+          type: "electro",
+          jour: "vendredi",
+          image: require("@/assets/artists/dj snake.svg"),
+        },
+                {
+          id:6,
+          name: "Dj snake",
+          type: "electro",
+          jour: "vendredi",
+          image: require("@/assets/artists/dj snake.svg"),
+        },
+                        {
+          id:7,
+          name: "Dj snake",
+          type: "electro",
+          jour: "vendredi",
+          image: require("@/assets/artists/dj snake.svg"),
+        },
+                        {
+          id:8,
+          name: "Dj snake",
+          type: "electro",
+          jour: "vendredi",
+          image: require("@/assets/artists/dj snake.svg"),
+        },
+                        {
+          id:9,
           name: "Dj snake",
           type: "electro",
           jour: "vendredi",

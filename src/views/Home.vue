@@ -13,7 +13,7 @@
       alt="banner"
     />
     <div class="head-carte">
-      <h2 class="titre-carte mt-4">Bienvenue dans la nation !</h2>
+      <h2 class="titre-carte mt-4">Carte de la nation !</h2>
     </div>
     <Map />
     <Footer />
@@ -45,7 +45,7 @@ body {
   width: 100%;
 }
 .titre-carte {
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 1.2em;
+  text-align: left;
 }
 </style>

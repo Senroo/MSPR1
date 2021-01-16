@@ -1,16 +1,34 @@
 <template>
   <div id="news">
-    <b-carousel id="artistsSlider" class="mt-5" controls indicators :interval="4000" fade>
+    <h2 class="news-artistes mt-3">Concert à venir :</h2>
+    <b-carousel
+      id="artistsSlider"
+      class="mt-2"
+      controls
+      indicators
+      :interval="4000"
+      fade
+    >
       <b-carousel-slide v-for="i in Math.ceil(items.length / 3)" :key="i">
         <template v-slot:img>
           <b-card-group class="artistsSliderImgGroup d-flex">
-            <b-card v-for="item in items.slice((i - 1) * 3, i * 3)" :alt="item.name"
-                    :img-src="item.image" class="artistSliderImg border-0 m-2" :key="item.id" overlay>
+            <b-card
+              v-for="item in items.slice((i - 1) * 3, i * 3)"
+              :alt="item.name"
+              :img-src="item.image"
+              class="artistSliderImg border-0 m-1"
+              :key="item.id"
+              overlay
+            >
             </b-card>
           </b-card-group>
         </template>
       </b-carousel-slide>
     </b-carousel>
+    <router-link to="/programmation">
+    <a class="details-artistes mt-2">En voir plus</a>
+    </router-link>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -69,9 +87,8 @@ export default {
 };
 </script>
 
-<style>
+<style scooped>
 #news {
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -79,13 +96,26 @@ export default {
   width: 100%;
 }
 
-#artistsSlider .carousel-indicators li{
+#artistsSlider .carousel-indicators li {
   width: 0.9rem;
   height: 0.9rem;
 }
 
-#artistsSlider .carousel-control-next span, #artistsSlider .carousel-control-prev span {
-  width: 5rem!important;
-  height: 5rem!important;
+.news-artistes {
+  font-size: 1.2em;
+}
+
+.details-artistes {
+  float: right;
+
+}
+
+a:hover {
+  color: white;
+  
+}
+
+#artistsSlider___BV_indicators_{
+  display:none;
 }
 </style>
