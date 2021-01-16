@@ -12,6 +12,10 @@
       src="@/assets/billetterie-mobile.svg"
       alt="banner"
     />
+    <div class="tweet">
+      <h2 class="mt-3">Tweet en direct :</h2>
+    <Tweet />
+    </div>
     <div class="head-carte">
       <h2 class="titre-carte mt-4">Carte de la nation !</h2>
     </div>
@@ -26,6 +30,7 @@ import Footer from "../components/footer/Footer.vue";
 import Slider from "../components/artites/slider.vue";
 import News from "../components/menu/ImportantInfo.vue";
 import Map from "../components/bottom-navbar/map.vue";
+import Tweet from "../components/tweet-api/Tweet.vue"
 
 export default {
   name: "Home",
@@ -34,6 +39,7 @@ export default {
     News,
     Map,
     Footer,
+    Tweet,
   },
 };
 </script>
@@ -48,4 +54,9 @@ body {
   font-size: 1.2em;
   text-align: left;
 }
+
+.tweet h2{
+  font-size: 1.2em;
+}
+
 </style>
