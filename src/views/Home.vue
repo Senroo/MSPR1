@@ -2,7 +2,7 @@
   <div class="home">
     <News/>
     <Slider/>
-    <img class="billet" src="@/assets/banner/banner.svg" alt="banner"/>
+    <img class="billet mt-3" src="@/assets/billetterie-mobile.svg" alt="banner"/>
     <h2 class="titre-carte mt-4">Bienvenue dans la nation !</h2>
     <hr>
     <Map/>
