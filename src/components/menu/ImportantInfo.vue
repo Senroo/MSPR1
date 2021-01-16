@@ -1,26 +1,23 @@
 <template>
   <div id="slider">
-
     <vueper-slides>
       <vueper-slide
-          v-for="(slide, i) in slides"
-          :key="i"
-          :title="slide.title"
-          :content="slide.content"
+        v-for="(slide, i) in slides"
+        :key="i"
+        :title="slide.title"
+        :content="slide.content"
       />
-      
     </vueper-slides>
-
   </div>
 </template>
 
 <script>
 /*import axios from 'axios';*/
-import {VueperSlides, VueperSlide} from 'vueperslides'
-import 'vueperslides/dist/vueperslides.css'
+import { VueperSlides, VueperSlide } from "vueperslides";
+import "vueperslides/dist/vueperslides.css";
 
 export default {
-  components: {VueperSlides, VueperSlide},
+  components: { VueperSlides, VueperSlide },
   data() {
     return {
       slides: [
@@ -31,15 +28,11 @@ export default {
         {
           title: "Slide #2",
           content: "je suis un artiste",
-        }
+        },
       ],
-
     };
   },
-  methods() {
-
-
-  }
+  methods() {},
   /* mounted () {
   var options = {
     method: 'GET',
@@ -58,7 +51,6 @@ export default {
   });
    }*/
 };
-
 </script>
 
 <style>
@@ -68,24 +60,20 @@ export default {
 }
 
 #slider {
-      background: linear-gradient(-45deg,#7673FE, #F3BA00, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-
+  background: linear-gradient(-45deg, #7673fe, #f3ba00, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
-
-
 </style>
