@@ -18,7 +18,7 @@
     <Tweet />
     </div>
     <div class="head-carte">
-      <h2 class="titre-carte mt-4">Carte de la nation !</h2>
+      <h2 class="titre-carte mb-3">Carte de la nation !</h2>
     </div>
     <Map />
 
