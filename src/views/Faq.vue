@@ -103,7 +103,7 @@ border-color: red;
   width: auto;
 }
 button .accordion__toggle-button{
-  background-color: red!important;
+  background-color: green!important;
 }
 .accordion{
   /*border-color: blue!important;*/
@@ -114,5 +114,11 @@ h1{
 }
 section.faq{
   margin-top: 50px;
+}
+.accordion__toggle-button_active{
+
+background-color: #6535FF!important;
+padding: 10px!important;
+border-radius: 10px;
 }
 </style>

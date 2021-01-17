@@ -88,6 +88,7 @@ export default {
 </script>
 
 <style scooped>
+
 #news {
   width: 100%;
 }
@@ -117,5 +118,14 @@ a:hover {
 
 #artistsSlider___BV_indicators_{
   display:none;
+}
+h2{
+  font-size: 35px!important;
+  padding:10px!important;
+  background: linear-gradient(to right, #7673FE 0%, #F3BA00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    text-align: center!important;
+    font-family: "Inter", sans-serif!important;
 }
 </style>
