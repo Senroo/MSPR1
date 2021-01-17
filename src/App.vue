@@ -1,15 +1,17 @@
 <template>
   <div id="app">
     <nav class="main-nav">
-      <div class="logo">
-        <img src="./assets/logo.svg"/>
-      </div>
-      <Burger></Burger>
+      <b-container class="bv-example-row">
+        <b-row>
+        <b-col ><Burger></Burger></b-col>
+        <b-col ><img class="logo" src="./assets/logo.svg" /></b-col>
+      </b-row>
+      </b-container>
     </nav>
 
     <Sidebar>
       <ul class="sidebar-panel-nav">
-        <img class="mb-5" src="./assets/logo.svg" alt="logo"/>
+        <img class="mb-5" src="./assets/logo.svg" alt="logo" />
         <li><router-link to="/">Accueil</router-link></li>
         <li><router-link to="/programmation">Programmation</router-link></li>
         <li><router-link to="/about">About</router-link></li>
@@ -19,8 +21,6 @@
       </ul>
     </Sidebar>
     <router-view></router-view>
-
-
 
   </div>
 </template>
@@ -36,8 +36,8 @@ export default {
   },
 };
 </script>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+<style scoped>
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 
 html {
   height: 100%;
@@ -46,9 +46,11 @@ html {
 ul img {
   width: 90%;
 }
-
-.logo img {
-  width: 25%;
+.bv-example-row{
+  height: 30%;
+}
+.logo{
+  width: 100%;
 }
 
 body {
@@ -72,7 +74,6 @@ body {
   justify-content: space-between;
   padding: 0.5rem 0.8rem;
 }
-
 ul.sidebar-panel-nav {
   list-style-type: none;
 }

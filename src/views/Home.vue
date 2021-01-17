@@ -45,6 +45,9 @@ export default {
 </script>
 <style scoped>
 @import "~animate.css/animate.css";
+#v-step-46f34eda{
+  background: white!important;
+}
 body {
 }
 .billet {
