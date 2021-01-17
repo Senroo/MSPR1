@@ -2,7 +2,7 @@
   <div class="home">
     <News />
     <Slider />
-
+    <CookieLaw />
     <a @click="show()"><img
       class="billet mt-3"
       src="@/assets/billetterie-mobile.svg"
@@ -24,7 +24,6 @@
     <Footer />
   </div>
 </template>
-
 <script>
 // @ is an alias to /src
 import Footer from "../components/footer/Footer.vue";
@@ -32,6 +31,7 @@ import Slider from "../components/artites/slider.vue";
 import News from "../components/menu/ImportantInfo.vue";
 import Map from "../components/bottom-navbar/map.vue";
 import Tweet from "../components/tweet-api/Tweet.vue"
+import CookieLaw from "../components/cookie/cookie.vue"
 export default {
   name: "Home",
   components: {
@@ -40,6 +40,7 @@ export default {
     Map,
     Footer,
     Tweet,
+    CookieLaw,
   },
   methods:{
       show () {
@@ -74,6 +75,7 @@ body {
 .tweet h2{
   font-size: 1.2em;
 }
+
 
 
 </style>
