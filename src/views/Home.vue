@@ -2,16 +2,17 @@
   <div class="home">
     <News />
     <Slider />
-    <img
-      srcset="
-        @/assets/billetterie-mobile.svg 480w,
-        @/assets/banner/banner.svg 800w
-      "
-      size="(max-width: 480px), 800px"
+
+    <a @click="show()"><img
       class="billet mt-3"
       src="@/assets/billetterie-mobile.svg"
       alt="banner"
-    />
+    /></a>
+    <modal name="example">
+    <img class="bille"  src="@/assets/billetterie-mobile.svg"/>
+    <a @click="hide()">Fermer</a>
+    </modal>
+
     <div class="tweet">
       <h2 class="mt-3">Tweet en direct :</h2>
     <Tweet />
@@ -31,7 +32,6 @@ import Slider from "../components/artites/slider.vue";
 import News from "../components/menu/ImportantInfo.vue";
 import Map from "../components/bottom-navbar/map.vue";
 import Tweet from "../components/tweet-api/Tweet.vue"
-
 export default {
   name: "Home",
   components: {
@@ -41,6 +41,15 @@ export default {
     Footer,
     Tweet,
   },
+  methods:{
+      show () {
+            this.$modal.show('example');
+            
+        },
+        hide () {
+            this.$modal.hide('example');
+        }
+  }
 };
 </script>
 <style scoped>
@@ -48,10 +57,14 @@ export default {
 #v-step-46f34eda{
   background: white!important;
 }
+
 body {
 }
 .billet {
   width: 100%;
+}
+.bille {
+  width: 20%;  
 }
 .titre-carte {
   font-size: 1.2em;
@@ -61,5 +74,6 @@ body {
 .tweet h2{
   font-size: 1.2em;
 }
+
 
 </style>

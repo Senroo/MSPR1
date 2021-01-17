@@ -4,7 +4,8 @@
       <b-container class="bv-example-row">
         <b-row>
         <b-col ><Burger></Burger></b-col>
-        <b-col ><img class="logo" src="./assets/logo.svg" /></b-col>
+        <b-col @click="imgClick(item)"><img class="logo" src="./assets/logo.svg" /></b-col>
+        
       </b-row>
       </b-container>
     </nav>
