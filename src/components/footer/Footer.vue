@@ -24,7 +24,6 @@
           >
         </b-row>
       </b-container>
-      <router-view></router-view>
     </div>
   </footer>
 </template>

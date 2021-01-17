@@ -21,12 +21,12 @@
       <h2 class="titre-carte mt-4">Carte de la nation !</h2>
     </div>
     <Map />
-    <Footer />
+
   </div>
 </template>
 <script>
 // @ is an alias to /src
-import Footer from "../components/footer/Footer.vue";
+
 import Slider from "../components/artites/slider.vue";
 import News from "../components/menu/ImportantInfo.vue";
 import Map from "../components/bottom-navbar/map.vue";
@@ -38,7 +38,6 @@ export default {
     Slider,
     News,
     Map,
-    Footer,
     Tweet,
     CookieLaw,
   },

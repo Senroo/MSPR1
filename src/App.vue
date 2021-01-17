@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    <div id="header">
     <nav class="main-nav">
+      
       <b-container class="bv-example-row">
         <b-row>
         <b-col ><Burger></Burger></b-col>
@@ -21,19 +23,27 @@
         <li><router-link to="/Faq">FAQ</router-link></li>
       </ul>
     </Sidebar>
+    </div>
+        <div id="body">
     <router-view></router-view>
-
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+          <Footer />
+      </div>
   </div>
 </template>
 <script>
 import Burger from "./components/menu/burger.vue";
 import Sidebar from "./components/menu/sidebar.vue";
+import Footer from "./components/footer/Footer.vue";
 
 export default {
   name: "app",
   components: {
     Burger,
     Sidebar,
+        Footer,
   },
 };
 </script>
@@ -86,4 +96,5 @@ ul.sidebar-panel-nav > li > a {
   display: block;
   padding-bottom: 0.5em;
 }
+.clear { background:black; clear: both; height: 12vh; }
 </style>
