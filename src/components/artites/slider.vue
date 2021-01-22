@@ -26,7 +26,7 @@
       </b-carousel-slide>
     </b-carousel>
     <router-link to="/programmation">
-    <a class="details-artistes mt-2">En voir plus</a>
+    <a class="details-artistes mt-2" >En voir plus</a>
     </router-link>
     <router-view></router-view>
   </div>
@@ -108,6 +108,8 @@ export default {
 
 .details-artistes {
   float: right;
+  color:rgb(118, 115, 254)!important;
+  font-size: 1.2em;
 
 }
 

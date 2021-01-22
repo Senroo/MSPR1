@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="contact_titre">
+    <div class="contact_titre mb-2 mt-">
     <h1 class=" pt-4 contact-titre">Vous voulez contacter la nation ?</h1>
     </div>
     <div class="container-contact">
       <div class="image-contact">
-        <img class="mt-0 image_contact" src="https://www.plumetismagazine.net/medias/2019/09/a4_visuel_2_labelpomme_eng.jpg"/>
+        <img class="mt-2 image_contact" src="@/assets/banner/festival.jpg"/>
       </div>
       <Form/>
   </div>
@@ -29,17 +29,35 @@ export default {
 
 .image_contact {
   width: 100%;
-  height: 50vh;
+
 }
 
-.contact_titre {
-  text-align: center;
-  background-color: #4043B4;
-  height: 10vh;
-}
-.contact-titre {
-  color: white;
+.contact-titre{
+    color: white;
   font-size: 1.5em;
-
+  text-align: center;
 }
+.contact_titre {
+
+    background: linear-gradient(-45deg, #7673fe, #f3ba00, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  width: 100%;
+  height:9vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
 </style>

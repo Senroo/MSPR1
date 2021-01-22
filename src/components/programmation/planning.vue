@@ -1,7 +1,7 @@
 <template>
   <div id="planning">
     <div class="filtre">
-      <div class="filtre1 mr-5 ml-4 mt-2">
+      <div class="filtre1 mr-5 ml-4 mt-3">
         <p>Genre</p>
         <select class="form-control" v-model="selectedType">
           <option value="rap">Rap</option>
@@ -11,7 +11,7 @@
         </select>
       </div>
 
-      <div class="filtre2 mt-2">
+      <div class="filtre2 mt-3">
         <p>Date</p>
         <select class="form-control" v-model="selectedSize">
           <option value="vendredi">Jour 1</option>
@@ -20,12 +20,22 @@
         </select>
       </div>
       <div class="reset mt-5">
-        <button class="btn btn-primary ml-5" @click="shut()">Reset</button>
+        <button class="btn ml-5" style="background-color:rgb(118, 115, 254)!important; color:white;"  @click="shut()">Reset</button>
       </div>
     </div>
-    <div id="item-artistes" class="d-flex flex-wrap justify-content-around text-center mt-5">
-      <div id="container-artist" v-for="(item, index) in computed_items" :key="index" class="Item">
-        <router-link :to="{ name: 'info', params: { name: item.name } }"><img class="ItemImg mb-4 pr-2" :src="item.image" /></router-link>
+    <div
+      id="item-artistes"
+      class="d-flex flex-wrap justify-content-around text-center mt-5"
+    >
+      <div
+        id="container-artist"
+        v-for="(item, index) in computed_items"
+        :key="index"
+        class="Item"
+      >
+        <router-link :to="{ name: 'info', params: { name: item.name } }"
+          ><img class="ItemImg mb-4 pr-2" :src="item.image"
+        /></router-link>
         <router-view></router-view>
       </div>
     </div>
@@ -47,56 +57,98 @@ export default {
           image: require("@/assets/artists/damso.svg"),
         },
         {
-          id:2,
+          id: 1,
+          name: "Damso",
+          type: "rap",
+          jour: "vendredi",
+          image: require("@/assets/artists/damso.svg"),
+        },
+        {
+          id: 1,
+          name: "Damso",
+          type: "rap",
+          jour: "vendredi",
+          image: require("@/assets/artists/damso.svg"),
+        },
+        {
+          id: 1,
+          name: "Damso",
+          type: "rap",
+          jour: "vendredi",
+          image: require("@/assets/artists/damso.svg"),
+        },
+        {
+          id: 1,
+          name: "Damso",
+          type: "rap",
+          jour: "vendredi",
+          image: require("@/assets/artists/damso.svg"),
+        },
+        {
+          id: 1,
+          name: "Damso",
+          type: "rap",
+          jour: "vendredi",
+          image: require("@/assets/artists/damso.svg"),
+        },
+        {
+          id: 1,
+          name: "Damso",
+          type: "rap",
+          jour: "vendredi",
+          image: require("@/assets/artists/damso.svg"),
+        },
+        {
+          id: 2,
           name: "Ninho",
           type: "rap",
           jour: "samedi",
           image: require("@/assets/artists/ninho.svg"),
         },
         {
-          id:3,
+          id: 3,
           name: "Dua Lipa",
           type: "pop",
           jour: "dimanche",
           image: require("@/assets/artists/dua lipa.svg"),
         },
         {
-          id:4,
+          id: 4,
           name: "Dj snake",
           type: "electro",
           jour: "vendredi",
           image: require("@/assets/artists/dj snake.svg"),
         },
-                {
-          id:5,
+        {
+          id: 5,
           name: "Dj snake",
           type: "electro",
           jour: "vendredi",
           image: require("@/assets/artists/dj snake.svg"),
         },
-                {
-          id:6,
+        {
+          id: 6,
           name: "Dj snake",
           type: "electro",
           jour: "vendredi",
           image: require("@/assets/artists/dj snake.svg"),
         },
-                        {
-          id:7,
+        {
+          id: 7,
           name: "Dj snake",
           type: "electro",
           jour: "vendredi",
           image: require("@/assets/artists/dj snake.svg"),
         },
-                        {
-          id:8,
+        {
+          id: 8,
           name: "Dj snake",
           type: "electro",
           jour: "vendredi",
           image: require("@/assets/artists/dj snake.svg"),
         },
-                        {
-          id:9,
+        {
+          id: 9,
           name: "Dj snake",
           type: "electro",
           jour: "vendredi",
@@ -112,10 +164,10 @@ export default {
     },
   },
   computed: {
-    computed_items: function() {
+    computed_items: function () {
       let filterType = this.selectedType,
-          filterSize = this.selectedSize;
-      return this.items.filter(function(item) {
+        filterSize = this.selectedSize;
+      return this.items.filter(function (item) {
         let filtered = true;
         if (filterType && filterType.length > 0) {
           filtered = item.type === filterType;
@@ -147,8 +199,7 @@ export default {
   width: 33%;
 }
 
-.filtre{
+.filtre {
   display: flex;
 }
-
 </style>

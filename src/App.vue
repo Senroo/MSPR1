@@ -96,5 +96,5 @@ ul.sidebar-panel-nav > li > a {
   display: block;
   padding-bottom: 0.5em;
 }
-.clear {background:black; clear: both; height: 12vh; }
+.clear {background:white; clear: both; height: 12vh; }
 </style>

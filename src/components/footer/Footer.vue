@@ -5,19 +5,19 @@
       <b-container class="bv-example-row mt-2 ml-2">
         <b-row>
           <router-link to="/"
-            ><b-col id="v-step-1" class="mt-2">
+            ><b-col id="v-step-1" class="mt-2" style="color:rgb(118, 115, 254);">
               <i class="fas fa-2x fa-ticket-alt"></i>
               <p class="mt-2 mr-2">Billeterie</p>
             </b-col></router-link
           >
           <router-link to="/programmation"
-            ><b-col id="v-step-2" class="mt-2">
+            ><b-col id="v-step-2" class="mt-2" style="color:black;">
               <i class="fas fa-2x fa-calendar-week"></i>
               <p class="mt-2 mr-3">Programmation</p>
             </b-col></router-link
           >
           <router-link to="/carte"
-            ><b-col id="v-step-3" class="mt-2">
+            ><b-col id="v-step-3" class="mt-2" style="color:rgb(243, 186, 0);">
               <i class="fas fa-2x fa-map"></i>
               <p class="mt-2">Carte</p>
             </b-col></router-link

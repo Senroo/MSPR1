@@ -1,6 +1,6 @@
 <template>
-  <div class="contact-form">
-        <mdb-container class="mt-5">
+  <div class="contact-form mb-3">
+        <mdb-container class="mt-4">
           <mdb-card>
             <mdb-card-title class="mt-4 h2">Contact us</mdb-card-title>
             <mdb-card-body>
@@ -51,26 +51,26 @@
                   <mdb-col md="4">
                     <mdb-row>
                       <mdb-col class="mt-4">
-                        <mdb-icon icon="map-marker-alt" size="2x"/>
-                        <p>San Francisco, CA 94126, USA</p>
+                        <mdb-icon icon="map-marker-alt" size="2x" style="color:#F3BA00;"/>
+                        <p>7 rue de l'espace, Nantes, 44000</p>
                       </mdb-col>
                     </mdb-row>
                     <mdb-row>
                       <mdb-col class="mt-4">
                         <mdb-icon icon="phone" size="2x"/>
-                        <p>+ 01 234 567 89</p>
+                        <p>06 95 45 25 10</p>
                       </mdb-col>
                     </mdb-row>
                     <mdb-row>
                       <mdb-col class="mt-4">
-                        <mdb-icon icon="envelope" size="2x"/>
-                        <p>contact@mdbootstrap.com</p>
+                        <mdb-icon icon="envelope" size="2x" style="color:#7673FE;"/>
+                        <p>nationsounds@contact.com</p>
                       </mdb-col>
                     </mdb-row>
                   </mdb-col>
                 </mdb-row>
                 <mdb-btn
-                    color="primary"
+                   
                     type="submit"
                     class=""
                 >Send
@@ -138,5 +138,11 @@ export default {
   font-size: 1.5em;
   background-color: black;
   height: 10vh;
+}
+#body > div > div.container-contact > div.contact-form.mb-3 > div > div > div > form > button{
+
+  background-color:#F3BA00!important;
+  color: white;
+
 }
 </style>
