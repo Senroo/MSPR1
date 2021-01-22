@@ -20,7 +20,7 @@
                     <mdb-row>
                       <mdb-col>
                         <mdb-input
-                            label="Your name"
+                            label="Nom"
                             v-model="fields.name"
                             required
                             name="name"
@@ -29,7 +29,7 @@
                       <mdb-col>
                         <mdb-input
                             type="email"
-                            label="Your email"
+                            label="Email"
                             v-model="fields.email"
                             required
                             name="mail"
@@ -40,10 +40,11 @@
                       <mdb-col>
                         <mdb-input
                             type="textarea"
-                            label="Your message"
+                            label="Ton message"
                             v-model="fields.message"
                             required
                             name="message"
+                            
                         />
                       </mdb-col>
                     </mdb-row>
@@ -63,7 +64,7 @@
                     </mdb-row>
                     <mdb-row>
                       <mdb-col class="mt-4">
-                        <mdb-icon icon="envelope" size="2x" style="color:#7673FE;"/>
+                        <mdb-icon icon="envelope" size="2x" style="color:#7673FE;" />
                         <p>nationsounds@contact.com</p>
                       </mdb-col>
                     </mdb-row>
