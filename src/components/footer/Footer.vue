@@ -2,24 +2,31 @@
   <footer id="v-step-0" class="footer footer-transparent">
     <v-tour style="" name="myTour" :steps="steps" :options="myOptions"></v-tour>
     <div class="container">
-      <b-container class="bv-example-row mt-2 ml-2">
+      <b-container class="">
         <b-row>
           <router-link to="/"
-            ><b-col id="v-step-1" class="mt-2" style="color:rgb(118, 115, 254);">
-              <i class="fas fa-2x fa-ticket-alt"></i>
-              <p class="mt-2 mr-2">Billeterie</p>
+            ><b-col id="v-step-1" class="mt-2 width" style="color:rgb(118, 115, 254);">
+              <button class="btn" style="background-color:rgb(118, 115, 254); color:white;" >
+                <i class="fas fa-2x fa-ticket-alt"></i>
+              </button>
+              <p class="">Billeterie</p>
             </b-col></router-link
           >
           <router-link to="/programmation"
-            ><b-col id="v-step-2" class="mt-2" style="color:black;">
-              <i class="fas fa-2x fa-calendar-week"></i>
-              <p class="mt-2 mr-3">Programmation</p>
+            ><b-col id="v-step-2" class="mt-2 width" style="color:rgb(118, 115, 254);">
+                     <button class="btn" style="background-color:rgb(118, 115, 254); color:white;" >
+                          <i class="fas fa-2x fa-calendar-week"></i>
+                        </button >
+              <p class="">Planning</p>
             </b-col></router-link
           >
           <router-link to="/carte"
-            ><b-col id="v-step-3" class="mt-2" style="color:rgb(243, 186, 0);">
-              <i class="fas fa-2x fa-map"></i>
-              <p class="mt-2">Carte</p>
+            >
+            <b-col id="v-step-3" class="mt-2 width" style="color:rgb(118, 115, 254);">
+                      <button class="btn" style="background-color:rgb(118, 115, 254); color:white;" >
+                           <i class="fas fa-2x fa-map"></i>
+                      </button>
+              <p class="">Carte</p>
             </b-col></router-link
           >
         </b-row>
@@ -101,5 +108,23 @@ footer {
 }
 .v-tour__target--highlighted {
   background: white;
+}
+footer#v-step-0 {
+    Z-INDEX: 20;
+    BACKGROUND-COLOR: WHITE;
+        border-top: 2px solid #000;
+
+}
+a{width: 33%;
+text-decoration: none!important;
+}
+i{display: inline-flex;}
+.btn:hover{
+    background-color: #f3ba00!important;
+}
+p{color: rgb(27, 27, 27);
+font-family: 'Poppins', sans-serif;
+font-weight: 300;
+margin-bottom: 0%;
 }
 </style>

@@ -49,6 +49,7 @@ export default {
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap');
 
 html {
   height: 100%;
@@ -61,8 +62,7 @@ ul img {
   height: 30%;
 }
 .logo{
-  width: 100%;
-}
+width: 30VH;}
 
 body {
   border: 0;
@@ -72,7 +72,7 @@ body {
   height: 100%;
   background: white;
 }
-
+h2,h1{font-family: 'Montserrat', sans-serif!important;}
 .logo {
   align-self: center;
   color: #fff;
