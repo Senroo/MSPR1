@@ -128,6 +128,8 @@ h2{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     text-align: center!important;
-    font-family: "Inter", sans-serif!important;
+    font-family: 'Poppins'!important;
+    font-weight: 700!important;
+
 }
 </style>

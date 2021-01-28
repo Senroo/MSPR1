@@ -72,7 +72,10 @@ body {
   height: 100%;
   background: white;
 }
-h2,h1{font-family: 'Montserrat', sans-serif!important;}
+h2 {
+    font-family: 'Poppins'!important;
+    font-weight: 700!important;
+}
 .logo {
   align-self: center;
   color: #fff;
