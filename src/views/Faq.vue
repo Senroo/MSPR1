@@ -61,7 +61,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 * {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   border-color: blue;

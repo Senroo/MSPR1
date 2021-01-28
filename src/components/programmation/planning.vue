@@ -185,7 +185,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .ItemImg {
   width: 85%;
   height: 85%;

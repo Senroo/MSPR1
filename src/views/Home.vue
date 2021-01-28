@@ -3,15 +3,11 @@
     <News />
     <Slider />
     <CookieLaw />
-    <a @click="show()"><img
+    <a><img
       class="billet mt-3"
       src="@/assets/billetterie-mobile.svg"
       alt="banner"
     /></a>
-    <modal name="example">
-    <img class="bille"  src="@/assets/billetterie-mobile.svg"/>
-    <a @click="hide()">Fermer</a>
-    </modal>
 
     <div class="tweet">
       <h2 class="mt-3">Tweet en direct :</h2>
@@ -41,15 +37,7 @@ export default {
     Tweet,
     CookieLaw,
   },
-  methods:{
-      show () {
-            this.$modal.show('example');
-            
-        },
-        hide () {
-            this.$modal.hide('example');
-        }
-  }
+
 };
 </script>
 <style scoped>
