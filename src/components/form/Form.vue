@@ -5,7 +5,7 @@
             <mdb-card-title class="mt-4 h2">Contactez-nous !</mdb-card-title>
             <mdb-card-body>
               <mdb-card-text class="pr-5 pl-5" mr-4 ml-4
-              >Vous avez la moindre ? Nation Sounds est ravi de vous répondre ! Que cela soit sur l'organisation du festival ou la programmation du festival, l'équipe de Nation Sounds est là pour vous aider !
+              >Vous avez la moindre question ? Nation Sounds est ravi de vous répondre ! Que cela soit sur l'organisation du festival ou la programmation du festival, l'équipe de Nation Sounds est là pour vous aider !
               </mdb-card-text
               >
               <form
