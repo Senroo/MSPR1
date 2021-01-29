@@ -2,12 +2,10 @@
   <div class="contact-form mb-3">
         <mdb-container class="mt-4">
           <mdb-card>
-            <mdb-card-title class="mt-4 h2">Contact us</mdb-card-title>
+            <mdb-card-title class="mt-4 h2">Contactez-nous !</mdb-card-title>
             <mdb-card-body>
               <mdb-card-text class="pr-5 pl-5" mr-4 ml-4
-              >Do you have any questions? Please do not hesitate to contact us
-                directly. Our team will get back to you within a matter of hours
-                to help you.
+              >Vous avez la moindre ? Nation Sounds est ravi de vous répondre ! Que cela soit sur l'organisation du festival ou la programmation du festival, l'équipe de Nation Sounds est là pour vous aider !
               </mdb-card-text
               >
               <form
@@ -74,7 +72,7 @@
                    
                     type="submit"
                     class=""
-                >Send
+                >Envoyer
                 </mdb-btn
                 >
               </form>
