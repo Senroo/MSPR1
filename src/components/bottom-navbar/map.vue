@@ -15,7 +15,6 @@ iframe {
     display: flex;
     width: 100%;
       overflow: hidden;
-          pointer-events:none;
 
 
 } 

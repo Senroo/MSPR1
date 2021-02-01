@@ -23,11 +23,11 @@ export default {
       slides: [
         {
           title: "Alerte covid",
-          content: "Nous sommes en guerre",
+          content: "Télécharger l'application Tousanticovid pour être alertée en cas de contact du virus",
         },
         {
-          title: "Slide #2",
-          content: "je suis un artiste",
+          title: "Poste de secours",
+          content: "Nos sauveteurs sont à l'entrée du parc",
         },
       ],
     };
@@ -64,6 +64,20 @@ export default {
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
+#slider div{
+
+  color: white;
+     font-family: 'Poppins'!important;
+}
+.vueperslide__title{
+      font-weight: 700!important;
+
+}
+.vueperslide__content{
+      font-weight: 300!important;
+
+}
+
 
 @keyframes gradient {
   0% {
