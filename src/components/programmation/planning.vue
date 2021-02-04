@@ -35,7 +35,7 @@
         :key="index"
         class="Item"
       >
-        <router-link :to="{ name: 'info', params: { name: item.name } }"
+        <router-link :to="{ name: 'info', params: { id: item.id } }"
           ><img class="ItemImg mb-4 pr-2" :src="require(`@/assets/artists/${item.picture}`)"
         /></router-link>
         <router-view></router-view>

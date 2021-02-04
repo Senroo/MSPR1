@@ -7,6 +7,9 @@ import VueSplide from "@splidejs/vue-splide";
 import VueTour from 'vue-tour';
 import VModal from 'vue-js-modal'
 import i18n from './i18n'
+import moment from 'moment'
+
+Vue.prototype.moment = moment
 
 require('vue-tour/dist/vue-tour.css')
 
