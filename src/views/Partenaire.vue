@@ -1,6 +1,6 @@
 <template>
   <div class="partenaire">
-    <h1 class="h1 text-center mt-4">Nos Partenaires</h1>
+    <h1 class="h1 text-center mt-4">{{ $t('partenaire') }}</h1>
     <Partenaire></Partenaire>
   </div>
 </template>
