@@ -4,9 +4,9 @@
     <nav class="main-nav">
       
       <b-container class="bv-example-row">
-        <b-row>
+        <b-row >
         <b-col ><Burger></Burger></b-col>
-        <b-col @click="imgClick(item)"><img class="logo" src="./assets/logo.svg" /></b-col>
+        <b-col id="headerlogo" @click="imgClick(item)"><router-link to="/"><img class="logo" src="./assets/logo.svg" /> </router-link></b-col>
         
       </b-row>
       </b-container>
@@ -14,7 +14,7 @@
 
     <Sidebar>
       <ul class="sidebar-panel-nav">
-        <img class="mb-5" src="./assets/logo.svg" alt="logo" />
+        <router-link to="/"><img class="logo" src="./assets/logo.svg" /> </router-link>
         <li><router-link to="/">Accueil</router-link></li>
         <li><router-link to="/programmation">Programmation</router-link></li>
         <li><router-link to="/partenaire">Partenaires</router-link></li>
@@ -99,4 +99,15 @@ ul.sidebar-panel-nav > li > a {
   padding-bottom: 0.5em;
 }
 .clear {background:white; clear: both; height: 12vh; }
+
+ .cls-3 {
+        fill: #fff;
+        font-size: 27px;
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+
+#headerlogo{
+  text-align: right;
+}
 </style>
