@@ -2,10 +2,10 @@
   <div class="contact-form mb-3">
         <mdb-container class="mt-4">
           <mdb-card>
-            <mdb-card-title class="mt-4 h2">Contactez-nous !</mdb-card-title>
+            <mdb-card-title class="mt-4 h2">{{ $t('contact2') }}</mdb-card-title>
             <mdb-card-body>
               <mdb-card-text class="pr-5 pl-5" mr-4 ml-4
-              >Vous avez la moindre question ? Nation Sounds est ravi de vous répondre ! Que cela soit sur l'organisation du festival ou la programmation du festival, l'équipe de Nation Sounds est là pour vous aider !
+              > {{ $t('contact1') }}
               </mdb-card-text
               >
               <form

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="contact_titre mb-2 mt-">
-    <h1 class=" pt-4 contact-titre">Vous voulez contacter la nation ?</h1>
+    <h1 class=" pt-4 contact-titre">{{ $t('contact3') }}</h1>
     </div>
     <div class="container-contact">
       <div class="image-contact">

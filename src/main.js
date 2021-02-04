@@ -6,11 +6,14 @@ import router from "./router";
 import VueSplide from "@splidejs/vue-splide";
 import VueTour from 'vue-tour';
 import VModal from 'vue-js-modal'
+import i18n from './i18n'
 
 require('vue-tour/dist/vue-tour.css')
 
 Vue.use(VueTour)
 Vue.use(VModal)
+
+Vue.use(i18n)
 
 
 /*import axios from 'axios'; --> Import axios in your components when u need it*/
@@ -36,6 +39,7 @@ import './registerServiceWorker'
 Vue.config.productionTip = false;
 
 new Vue({
+  i18n,
   router,
   render: (h) => h(App),
 }).$mount("#app");
