@@ -1,6 +1,7 @@
 <template>
   <div class="carte">
-      <p>Salut</p>
+    <iframe scrolling="no" scrollwheel="false" src="https://www.google.com/maps/d/u/0/embed?mid=1-ej6YhnlI-xKt9NtEfRRgJh6d03UbkLH" width="640" height="480"></iframe>
+
   </div>
 </template>
 
@@ -11,5 +12,9 @@ export default {
 </script>
 
 <style>
-
+.carte{
+  width:100%;
+justify-content: center;
+}
+iframe{width: 100%;}
 </style>
