@@ -27,16 +27,16 @@
         <mdb-col md="2" lg="2" xl="2" class="mb-4">
           <h6 class="text-uppercase font-weight-bold"><strong>{{ $t('footer5') }}</strong></h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px" />
-          <p><a href="#!">{{ $t('footer6') }}</a></p>
-          <p><a href="#!">{{ $t('footer7') }}</a></p>
-          <p><a href="#!">{{ $t('footer8') }}</a></p>
+          <p><a href="http://localhost:8080/home">{{ $t('footer6') }}</a></p>
+          <p><a href="http://localhost:8080/programmation">{{ $t('footer7') }}</a></p>
+          <p><a href="http://localhost:8080/partenaire">{{ $t('footer8') }}</a></p>
         </mdb-col>
         <mdb-col md="3" lg="2" xl="2" class="mb-4">
           <h6 class="text-uppercase font-weight-bold"><strong>{{ $t('footer9') }}</strong></h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px" />
-          <p><a href="#!">{{ $t('footer10') }}</a></p>
-          <p><a href="#!">{{ $t('footer11') }}</a></p>
-          <p><a href="#!">{{ $t('footer12') }}</a></p>
+          <p><a href="http://localhost:8080/contact">{{ $t('footer10') }}</a></p>
+          <p><a href="http://localhost:8080/Faq">{{ $t('footer11') }}</a></p>
+          <p><a href="http://localhost:8080/Cgv">{{ $t('footer12') }}</a></p>
         </mdb-col>
         <mdb-col md="4" lg="3" xl="3" class="mb-4">
           <h6 class="text-uppercase font-weight-bold"><strong>{{ $t('footer13') }}</strong></h6>
