@@ -21,6 +21,8 @@
         <li><router-link to="/contact">{{ $t('contact') }}</router-link></li>
         <li><router-link to="/Faq">{{ $t('FAQ') }}</router-link></li>
         <li><router-link to="/Cgv">{{ $t('conditiongeneral') }}</router-link></li>
+       <li><router-link to="/carte">{{ $t('carte') }}</router-link></li>
+
         <div class="reseau">
         <a class="jaune" target="_:blank" href="https://www.linkedin.com/company/festivaldes3continents?originalSubdomain=fr">  <i class="fab fa-linkedin"></i> </a>
           <a class="violet" target="_:blank" href="https://www.instagram.com/nationsound/">  <i class="fab fa-instagram-square"></i></a>
@@ -32,7 +34,7 @@
 
       </ul>
       <p>
-      <select v-model="$i18n.locale">
+      <select class="form-select form-select-lg mb-3" v-model="$i18n.locale">
         <option value="fr">fr</option>
         <option value="en">en</option>
       </select>
@@ -42,7 +44,6 @@
         <div id="body">
     <router-view></router-view>
     </div>
-    <div class="clear"></div>
     <div id="footer">
           <Footer />
       <Footerweb />
@@ -158,12 +159,18 @@ ul.sidebar-panel-nav > li > a {
     display: none;
   }
 }
-
+ .position-relative {
+    margin: 17%;
+}
 @media (min-width: 280px) and (max-width: 1080px) {
   #footer > footer.page-footer.font-small.pt-0.page-footer.mt-4.unique-color-dark{
     display: none;
+
+  }
+    .logo{
+      width: 80%;
+    }
   }
 
 
-}
 </style>

@@ -27,9 +27,9 @@
         <mdb-col md="2" lg="2" xl="2" class="mb-4">
           <h6 class="text-uppercase font-weight-bold"><strong>{{ $t('footer5') }}</strong></h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px" />
-          <p><a href="http://localhost:8080/home">{{ $t('footer6') }}</a></p>
-          <p><a href="http://localhost:8080/programmation">{{ $t('footer7') }}</a></p>
-          <p><a href="http://localhost:8080/partenaire">{{ $t('footer8') }}</a></p>
+          <p><router-link to="/home">{{ $t('footer6') }}</router-link></p>
+          <p><router-link to="/programmation">{{ $t('footer7') }}</router-link>></p>
+          <p><router-link to="/programmation/partenaire">{{ $t('footer8') }}</router-link></p>
         </mdb-col>
         <mdb-col md="3" lg="2" xl="2" class="mb-4">
           <h6 class="text-uppercase font-weight-bold"><strong>{{ $t('footer9') }}</strong></h6>

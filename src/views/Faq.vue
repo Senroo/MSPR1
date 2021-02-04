@@ -12,8 +12,32 @@
       </b-collapse>
     </b-card>
 
+  <div class="margin"></div>
+
   </div>
 </template>
+<style scoped>
+button.btn.btn-info.btn-block.not-collapsed {
+        font-family: "Poppins";
+            background-color: #F3BA00!important;
+
+            font-weight: 600;
+
+
+}
+
+div#accordion-1 {
+    font-family: 'Poppins';
+    color: black!important;
+}
+button.btn.btn-info.btn-block.collapsed {
+    font-family: "Poppins";
+    font-weight: 600;
+        background-color: #7673FE!important;
+
+}
+.margin{margin:20%}
+</style>
 
 <script>
 import axios from 'axios';

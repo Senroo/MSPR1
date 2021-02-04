@@ -17,7 +17,7 @@ importScripts(
   "/precache-manifest.e295941d634979157eca7c2aefcd83a1.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "front-end"});
+workbox.core.setCacheNameDetails({prefix: "Nation Sounds});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {

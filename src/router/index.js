@@ -2,11 +2,14 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Partenaire from '../views/Partenaire.vue';
 import Faq from '../views/Faq.vue';
+import Home from '../views/Home.vue';
 
 Vue.use(VueRouter)
 
 
 const routes = [
+
+    { path: '/', component: Home, alias: '/home' },
     {
         path: '/lang',
         component: {
@@ -16,8 +19,9 @@ const routes = [
      {
         path: '/home',
         name: 'Home',
-        component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
+        component: Home,
     },
+
     {
         path: '/about',
         name: 'About',

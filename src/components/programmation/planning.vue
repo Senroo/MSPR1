@@ -5,22 +5,14 @@
       <div class="filtre1 mr-5 ml-4 mt-3">
         <p>Genre</p>
         <select class="form-control" v-model="selectedType">
-          <option value="rap">Rap</option>
-          <option value="pop">Pop</option>
-          <option value="electro">Electro</option>
-          <option value="variete">VFr</option>
-          <option value="rock">rock</option>
+          <option value="Rap">Rap</option>
+          <option value="Pop">Pop</option>
+          <option value="Electro">Electro</option>
+          <option value="Variété">Variété française</option>
+          <option value="Rock">Rock</option>
         </select>
       </div>
 
-      <div class="filtre2 mt-3">
-        <p>Date</p>
-        <select class="form-control" v-model="selectedSize">
-          <option value="vendredi">{{ $t('jour1') }}</option>
-          <option value="samedi">{{ $t('jour2') }}</option>
-          <option value="dimanche">{{ $t('jour3') }}</option>
-        </select>
-      </div>
       <div class="reset mt-5">
         <button class="btn ml-5" style="background-color:rgb(118, 115, 254)!important; color:white;"  @click="shut()">Reset</button>
       </div>
@@ -68,7 +60,7 @@ export default {
       return this.items.filter(function (item) {
         let filtered = true;
         if (filterType && filterType.length > 0) {
-          filtered = item.type === filterType;
+          filtered = item.genre === filterType;
         }
 
         if (filtered) {
@@ -84,6 +76,8 @@ export default {
 
     axios.get('http://localhost:8000/api/artists?page=1').then(response =>
         this.items = response.data["hydra:member"])
+
+
 
 
   },
