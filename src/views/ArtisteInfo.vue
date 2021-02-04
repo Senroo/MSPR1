@@ -7,16 +7,16 @@
       <img :src="require(`@/assets/artists/${InfoArtist.picture}`)">
       </div>
       <div class="info">
-        <h2>Qui est-il ?</h2>
+        <h2>{{ $t('artiste1') }}</h2>
         <p>{{InfoArtist.description}}</p>
-        <h2>Style de musique</h2>
+        <h2>{{ $t('artiste2') }}</h2>
         <p>{{InfoArtist.genre}}</p>
-        <h2>Situation de l'artiste</h2>
+        <h2>{{ $t('artiste3') }}</h2>
         <p>{{InfoArtist.music_group}}</p>
-        <h2>Lieux et horaire de projet</h2>
-        <p>Lieu : {{MeeingArtists.location}}</p>
+        <h2>{{ $t('artiste4') }}</h2>
+        <p>{{ $t('artiste5') }} : {{MeeingArtists.location}}</p>
         <br />
-        <p>Date : <span>{{moment(MeeingArtists.date).format('dddd, hA')}}</span></p>
+        <p>{{ $t('artiste6') }} : <span>{{moment(MeeingArtists.date).format('dddd, hA')}}</span></p>
       </div>
       <div class="info_footer">
     <router-link align="center" to="/programmation">Retour</router-link>
