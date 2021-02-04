@@ -7,7 +7,6 @@
     "livetweet": "Livetweet",
     "cartehome": "Map of the nation !",
     "planning": "Planning",
-    "conditiongeneral": "General Condition",
     "carte": "Map",
     "envoyer": "Send",
     "jour1": "Days 1",
@@ -20,7 +19,27 @@
     "FAQ": "FAQ",
     "voirplus": "See More",
     "concert": "Future Concert",
-    "footer1": "Our menu of fast naviguation"
+    "footer1": "Our menu of fast naviguation",
+    "conditiongeneral": "Conditions générales",
+    "prog": "Programmation of the shows",
+    "cgv1": "General Terms & Conditions of Sale",
+    "cgv2": "Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses. Even better, it allows you to adjust the parameters of the random words to best fit your needs.",
+    "cgv3": "Article 1 : Legal Mention",
+    "cgv4": "The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a certain letter or only begin and end with certain letters. If you leave these blank, the randomize words that appear will be from the complete list.",
+    "cgv5": "Article 2 : Access to the festival",
+    "cgv6": "You also have the option of choosing the number of syllables of the words or the word length of the randomized words. There are also options to further refine by choosing less than or greater than options for both syllables and word length. Again, if you leave the space blank, the complete list of randomized words will be used. Finally, you can choose between standard text or cursive words. The cursive words will all be in cursive using cursive letters..",
+    "cgv7": "Article 3 : Collect of the data",
+    "cgv8": "Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés (CNIL) dans la mesure où il ne collecte aucune donnée concernant les Utilisateurs.",
+    "cgv9": "ARTICLE 4 : Intellectual property",
+    "cgv10": "Once you have input all of your specifications, all you have to do is to press the Generate Random Words button, and a list of random words will appear. Below are some of the common ways people use this tool.",
+    "cgv11": "ARTICLE 5 : Responsability",
+    "cgv12": "This tool can be useful for games like Pictionary or MadLibs. Since the words are random, this helps to keep a game like Pictionary fair for all those playing. For a game like MadLibs, it can help kids improve their vocabulary by generating words they may not have ever considered to fill in the blank spaces. The tool has the potential to help with any word game that doesn't require a specific word.",
+    "cgv13": "ARTICLE 6 : Hypertext Link",
+    "cgv14": "For those who write, this tool can be an excellent device to aid in the creative writing process. By using the tool to create 5 random words, a writer could then attempt to use all of them in a single paragraph. Longer random word lists could be incorporated into a short story. Since the writer doesn't know which words will appear, creativity must be used to successfully incorporate all the words. To make the challenge even more difficult, the writer could try to use the words in the exact order they were generated. In this way, writers can challenge their creativity to push their writing skills.",
+    "cgv15": "ARTICLE 7 : Cookies",
+    "cgv16": "ARTICLE 7 : Cookies",
+    "cgv17": "ARTICLE 8 : The Artist"
+
     
 
     

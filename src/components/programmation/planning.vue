@@ -1,6 +1,6 @@
 <template>
   <div id="planning">
-    <h2>Programmation de nos artistes</h2>
+    <h2>{{ $t('prog') }}</h2>
     <div class="filtre">
       <div class="filtre1 mr-5 ml-4 mt-3">
         <p>Genre</p>
