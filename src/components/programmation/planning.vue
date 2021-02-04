@@ -1,6 +1,6 @@
 <template>
   <div id="planning">
-    <pre>{{items}}</pre>
+    <h2>Programmation de nos artistes</h2>
     <div class="filtre">
       <div class="filtre1 mr-5 ml-4 mt-3">
         <p>Genre</p>
@@ -106,5 +106,11 @@ export default {
 
 .filtre {
   display: flex;
+}
+@media (min-width: 1080px) and (max-width: 2000px) {
+#planning > div.filtre{
+  justify-content:space-around;
+}
+
 }
 </style>

@@ -23,6 +23,23 @@ export default {
 </script>
 
 <style scoped>
+
+@media (min-width: 1080px) and (max-width: 2000px) {
+  .image-contact{
+    text-align: center;
+
+  }
+  img{
+    width:100%!important;
+    height: 45vh;
+  }
+  .i4ewOd-UzWXSb{
+    height: 100vh!important;
+  }
+
+}
+
+
 .container {
   text-align: center;
 }
