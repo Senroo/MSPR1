@@ -72,7 +72,7 @@
                    
                     type="submit"
                     class=""
-                >Envoyer
+                >{{ $t('envoyer') }}
                 </mdb-btn
                 >
               </form>

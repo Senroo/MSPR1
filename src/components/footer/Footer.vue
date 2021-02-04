@@ -9,7 +9,7 @@
               <button class="btn" style="background-color:rgb(118, 115, 254); color:white;" >
                 <i class="fas fa-2x fa-ticket-alt"></i>
               </button>
-              <p class="">Billeterie</p>
+              <p class="">{{ $t('billeterie') }}</p>
             </b-col></router-link
           >
           <router-link to="/programmation"
@@ -17,7 +17,7 @@
                      <button class="btn" style="background-color:rgb(118, 115, 254); color:white;" >
                           <i class="fas fa-2x fa-calendar-week"></i>
                         </button >
-              <p class="">Planning</p>
+              <p class="">{{ $t('planning') }}</p>
             </b-col></router-link
           >
           <router-link to="/carte"
@@ -26,7 +26,7 @@
                       <button class="btn" style="background-color:rgb(118, 115, 254); color:white;" >
                            <i class="fas fa-2x fa-map"></i>
                       </button>
-              <p class="">Carte</p>
+              <p class="">{{ $t('carte') }}</p>
             </b-col></router-link
           >
         </b-row>

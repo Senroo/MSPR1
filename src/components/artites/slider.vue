@@ -1,6 +1,6 @@
 <template>
   <div id="news">
-    <h2 class="news-artistes mt-3">Concert à venir :</h2>
+    <h2 class="news-artistes mt-3">{{ $t('concerts') }}</h2>
     <b-carousel
       id="artistsSlider"
       class="mt-2"
@@ -26,7 +26,7 @@
       </b-carousel-slide>
     </b-carousel>
     <router-link to="/programmation">
-    <a class="details-artistes mt-2" >En voir plus</a>
+    <a class="details-artistes mt-2" >{{ $t('voirplus') }}</a>
     </router-link>
     <router-view></router-view>
   </div>

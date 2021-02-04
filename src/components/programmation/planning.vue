@@ -16,9 +16,9 @@
       <div class="filtre2 mt-3">
         <p>Date</p>
         <select class="form-control" v-model="selectedSize">
-          <option value="vendredi">Jour 1</option>
-          <option value="samedi">Jour 2</option>
-          <option value="dimanche">Jour 3</option>
+          <option value="vendredi">{{ $t('jour1') }}</option>
+          <option value="samedi">{{ $t('jour2') }}</option>
+          <option value="dimanche">{{ $t('jour3') }}</option>
         </select>
       </div>
       <div class="reset mt-5">

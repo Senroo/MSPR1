@@ -10,11 +10,11 @@
     /></a>
 
     <div class="tweet">
-      <h2 class="mt-3">Tweet en direct :</h2>
+      <h2 class="mt-3">{{ $t('livetweet') }}</h2>
     <Tweet />
     </div>
     <div class="head-carte">
-      <h2 class="titre-carte mb-3">Carte de la nation !</h2>
+      <h2 class="titre-carte mb-3">{{ $t('cartehome') }}</h2>
     </div>
     <Map />
 
