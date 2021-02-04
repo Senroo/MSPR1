@@ -5,7 +5,7 @@
         v-for="(slide, i) in slides"
         :key="i"
         :title="slide.title"
-        :content="slide.content"
+        :content="slide.message"
       />
     </vueper-slides>
   </div>
@@ -15,41 +15,20 @@
 /*import axios from 'axios';*/
 import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
+import axios from "axios";
 
 export default {
   components: { VueperSlides, VueperSlide },
   data() {
     return {
-      slides: [
-        {
-          title: "Alerte covid",
-          content: "Télécharger l'application Tousanticovid pour être alertée en cas de contact du virus",
-        },
-        {
-          title: "Poste de secours",
-          content: "Nos sauveteurs sont à l'entrée du parc",
-        },
-      ],
+      slides: [],
     };
   },
-  methods() {},
-  /* mounted () {
-  var options = {
-    method: 'GET',
-    url: 'https://theaudiodb.p.rapidapi.com/artist-mb.php',
-    params: {i: '3kdshn1asZHr5OgvBIVHnmQsD_mU5j6m'},
-    headers: {
-      'x-rapidapi-key': '16f13d8468msh4a621be92a240a3p17b32ejsn41ba33443dad',
-      'x-rapidapi-host': 'theaudiodb.p.rapidapi.com'
-    }
-  };
+  mounted() {
+    axios.get('http://localhost:8000/api/notifications?page=1').then(response =>
+        this.slides = response.data["hydra:member"])
+  },
 
-  axios.request(options).then(function (response) {
-    console.log(response.data);
-  }).catch(function (error) {
-    console.error(error);
-  });
-   }*/
 };
 </script>
 

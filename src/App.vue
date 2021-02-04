@@ -17,7 +17,6 @@
         <img class="mb-5" src="./assets/logo.svg" alt="logo" />
         <li><router-link to="/">Accueil</router-link></li>
         <li><router-link to="/programmation">Programmation</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/partenaire">Partenaires</router-link></li>
         <li><router-link to="/contact">Contact</router-link></li>
         <li><router-link to="/Faq">FAQ</router-link></li>

@@ -3,6 +3,13 @@
     <pre>{{ InfoArtist }}</pre>
     <router-link to="/programmation">Retour</router-link>
     <router-view></router-view>
+    <div>
+      <ul v-for="(artiste, index) in InfoArtist" :key="index">
+        <li>
+          {{artiste}}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -48,7 +55,7 @@ export default {
     var name = url.searchParams.get("name");
     console.log(name);
 
-    axios.get('/test.json').then(response =>
+    axios.get('http://localhost:8000/api/partners?page=1').then(response =>
         this.InfoArtist = response.data)
 
 

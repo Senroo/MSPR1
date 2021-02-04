@@ -7,7 +7,8 @@
           <option value="rap">Rap</option>
           <option value="pop">Pop</option>
           <option value="electro">Electro</option>
-          <option value="idk">...</option>
+          <option value="variete">VFr</option>
+          <option value="rock">rock</option>
         </select>
       </div>
 
@@ -52,14 +53,14 @@ export default {
         {
           id: 1,
           name: "Damso",
-          type: "rap",
+          type: "rock",
           jour: "vendredi",
           image: require("@/assets/artists/damso.svg"),
         },
         {
           id: 1,
           name: "Damso",
-          type: "rap",
+          type: "variete",
           jour: "vendredi",
           image: require("@/assets/artists/damso.svg"),
         },
@@ -102,7 +103,7 @@ export default {
           id: 2,
           name: "Ninho",
           type: "rap",
-          jour: "samedi",
+          jour: "vendredi",
           image: require("@/assets/artists/ninho.svg"),
         },
         {
