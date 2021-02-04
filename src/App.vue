@@ -45,6 +45,7 @@
     <div class="clear"></div>
     <div id="footer">
           <Footer />
+      <Footerweb />
       </div>
   </div>
 </template>
@@ -52,19 +53,16 @@
 import Burger from "./components/menu/burger.vue";
 import Sidebar from "./components/menu/sidebar.vue";
 import Footer from "./components/footer/Footer.vue";
+import Footerweb from "./components/footer/Footer-Website.vue"
 
 export default {
-  created() {
-    window.addEventListener(
-        'resize',
-        this.$store.commit('setWindowWidth')
-  )
-  },
+
   name: "app",
   components: {
     Burger,
     Sidebar,
         Footer,
+        Footerweb,
   },
 
 
@@ -73,6 +71,9 @@ export default {
 <style >
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap');
+
+
+
 
 html {
   height: 100%;
@@ -149,11 +150,20 @@ ul.sidebar-panel-nav > li > a {
 #headerlogo{
   text-align: right;
 }
-/* (1920x1080) Full HD Display */
 @media (min-width: 1080px) and (max-width: 2000px) {
-#app{
-  margin-left: 5%;
-  margin-right: 5%;
+  #v-step-0 > div.container{
+    display: none;
+  }
+  #v-step-0 > div.v-tour{
+    display: none;
+  }
 }
+
+@media (min-width: 280px) and (max-width: 1080px) {
+  #footer > footer.page-footer.font-small.pt-0.page-footer.mt-4.unique-color-dark{
+    display: none;
+  }
+
+
 }
 </style>

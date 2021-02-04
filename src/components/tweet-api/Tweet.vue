@@ -14,10 +14,13 @@ Timeline,
 </script>
 
 <style scoped>
-.container-tweet{
-  text-align: center;
-}
+
 .timeline-Header .timeline-InformationCircle-widgetParent{
   display: none!important;
+}
+@media (min-width: 1080px) and (max-width: 2000px) {
+  .container-tweet{
+
+  }
 }
 </style>

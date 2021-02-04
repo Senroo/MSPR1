@@ -4,12 +4,17 @@
     <Slider />
     <CookieLaw />
     <a target="_blank" href="https://www.fnacspectacles.com/place-spectacle/ticket-evenement/reggae-summer-vibration-festival-mans38oj-lt.htm"><img
-      class="billet mt-3"
-      
+      class="billet-mobile mt-3"
+
       src="@/assets/billetterie-mobile.svg"
       alt="banner"
     /></a>
+    <a target="_blank" href="https://www.fnacspectacles.com/place-spectacle/ticket-evenement/reggae-summer-vibration-festival-mans38oj-lt.htm"><img
+        class="billet-web mt-3"
 
+        src="@/assets/banner/banner.svg"
+        alt="banner"
+    /></a>
     <div class="tweet">
       <h2 class="mt-3">{{ $t('livetweet') }}</h2>
     <Tweet />
@@ -64,6 +69,27 @@ export default {
 }
 
 
+@media (min-width: 1080px) and (max-width: 2000px) {
+  #body > div > a:nth-child(4) > img{
+    display: none;
+    width: 100%;
+  }
+
+  #body > div > a:nth-child(5) > img{
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 280px) and (max-width: 1080px) {
+  #body > div > a:nth-child(5) > img{
+    display: none;
+    }
+  #body > div > a:nth-child(4) > img{
+    width: 100%;
+  }
+
+}
 
 
 </style>
