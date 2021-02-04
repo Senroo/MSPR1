@@ -7,9 +7,10 @@
           <router-link to="/"
             ><b-col id="v-step-1" class="mt-2 width" style="color:rgb(118, 115, 254);">
               <button class="btn" style="background-color:rgb(118, 115, 254); color:white;" >
-                <i class="fas fa-2x fa-ticket-alt"></i>
+                <i class="fas fa-2x fa-home"></i>
               </button>
-              <p class="">{{ $t('billeterie') }}</p>
+              <p class="">{{ $t('accueil') }}</p>
+
             </b-col></router-link
           >
           <router-link to="/programmation"

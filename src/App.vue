@@ -20,6 +20,10 @@
         <li><router-link to="/partenaire">{{ $t('partenaires') }}</router-link></li>
         <li><router-link to="/contact">{{ $t('contact') }}</router-link></li>
         <li><router-link to="/Faq">{{ $t('FAQ') }}</router-link></li>
+        <li><router-link to="/Cgv">{{ $t('conditiongeneral') }}</router-link></li>
+
+    
+
       </ul>
     </Sidebar>
     </div>
@@ -74,6 +78,7 @@ body {
 h2 {
     font-family: 'Poppins'!important;
     font-weight: 700!important;
+    font-size: 4vw;
 }
 .logo {
   align-self: center;

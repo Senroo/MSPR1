@@ -3,8 +3,9 @@
     <News />
     <Slider />
     <CookieLaw />
-    <a><img
+    <a target="_blank" href="https://www.fnacspectacles.com/place-spectacle/ticket-evenement/reggae-summer-vibration-festival-mans38oj-lt.htm"><img
       class="billet mt-3"
+      
       src="@/assets/billetterie-mobile.svg"
       alt="banner"
     /></a>
@@ -21,7 +22,7 @@
   </div>
 </template>
 <script>
-// @ is an alias to /src
+// @ is an alias to /src 
 
 import Slider from "../components/artites/slider.vue";
 import News from "../components/menu/ImportantInfo.vue";
@@ -46,8 +47,7 @@ export default {
   background: white!important;
 }
 
-body {
-}
+
 .billet {
   width: 100%;
 }

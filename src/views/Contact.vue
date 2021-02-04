@@ -5,7 +5,7 @@
     </div>
     <div class="container-contact">
       <div class="image-contact">
-        <img class="mt-2 image_contact" src="@/assets/banner/festival.jpg"/>
+        <img class="mt-2 image_contact" src="@/assets/banner/festivalcontact.svg"/>
       </div>
       <Form/>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div id="slider">
     <vueper-slides autoplay>
-      <vueper-slide
+      <vueper-slide class="textinfo"
         v-for="(slide, i) in slides"
         :key="i"
         :title="slide.title"
@@ -33,13 +33,17 @@ export default {
 </script>
 
 <style>
+.textinfo{
+  font-size: 4vw;
+}
+
 .sliderImg {
   width: 100%;
   height: 100%;
 }
 
 #slider {
-  background: linear-gradient(-45deg, #7673fe, #f3ba00, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #7673fe, #f3ba00, #e0243d);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
