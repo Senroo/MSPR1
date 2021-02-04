@@ -15,12 +15,18 @@
     <Sidebar>
       <ul class="sidebar-panel-nav">
         <router-link to="/"><img class="logo" src="./assets/logo.svg" /> </router-link>
-        <li><router-link to="/">{{ $t('accueil') }}</router-link></li>
+        <li><router-link to="/home">{{ $t('accueil') }}</router-link></li>
         <li><router-link to="/programmation">{{ $t('programmation') }}</router-link></li>
         <li><router-link to="/partenaire">{{ $t('partenaires') }}</router-link></li>
         <li><router-link to="/contact">{{ $t('contact') }}</router-link></li>
         <li><router-link to="/Faq">{{ $t('FAQ') }}</router-link></li>
       </ul>
+      <p>
+      <select v-model="$i18n.locale">
+        <option value="fr">fr</option>
+        <option value="en">en</option>
+      </select>
+    </p>
     </Sidebar>
     </div>
         <div id="body">

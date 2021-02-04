@@ -41,6 +41,7 @@ import './registerServiceWorker'
 
 Vue.config.productionTip = false;
 
+
 new Vue({
   i18n,
   router,

@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
 import Partenaire from '../views/Partenaire.vue';
 import Faq from '../views/Faq.vue';
 
@@ -9,9 +8,15 @@ Vue.use(VueRouter)
 
 const routes = [
     {
-        path: '/',
+        path: '/lang',
+        component: {
+            render(c) {return c('router-view')}
+        },
+        children: [
+     {
+        path: '/home',
         name: 'Home',
-        component: Home
+        component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
     },
     {
         path: '/about',
@@ -81,7 +86,9 @@ const routes = [
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "about" */ '../views/Carte.vue')
-    },
+    }
+]
+},
 
 
 ]
