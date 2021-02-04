@@ -21,6 +21,8 @@
         <li><router-link to="/contact">{{ $t('contact') }}</router-link></li>
         <li><router-link to="/Faq">{{ $t('FAQ') }}</router-link></li>
         <li><router-link to="/Cgv">{{ $t('conditiongeneral') }}</router-link></li>
+       <li><router-link to="/carte">{{ $t('carte') }}</router-link></li>
+
         <div class="reseau">
         <a class="jaune" target="_:blank" href="https://www.linkedin.com/company/festivaldes3continents?originalSubdomain=fr">  <i class="fab fa-linkedin"></i> </a>
           <a class="violet" target="_:blank" href="https://www.instagram.com/nationsound/">  <i class="fab fa-instagram-square"></i></a>
