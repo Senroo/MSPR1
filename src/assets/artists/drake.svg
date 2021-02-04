@@ -12,7 +12,7 @@
       .cls-3 {
         fill: #fff;
         font-size: 29px;
-        font-family: Montserrat-Bold, Montserrat;
+        font-family: 'Poppins'; 
         font-weight: 700;
       }
     </style>

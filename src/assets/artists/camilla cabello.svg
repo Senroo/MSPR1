@@ -1,3 +1,4 @@
+<html>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="141" height="177" viewBox="0 0 141 177">
   <defs>
     <style>
@@ -12,7 +13,7 @@
       .cls-3 {
         fill: #fff;
         font-size: 13px;
-        font-family: Montserrat-Bold, Montserrat;
+        font-family: 'Poppins'; 
         font-weight: 700;
       }
     </style>
@@ -26,3 +27,4 @@
     <text id="Camila_Cabello" data-name="Camila Cabello" class="cls-3" transform="translate(22.011 27.033)"><tspan x="0" y="0">Camila Cabello</tspan></text>
   </g>
 </svg>
+</html>
