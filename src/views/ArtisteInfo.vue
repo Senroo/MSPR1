@@ -1,7 +1,7 @@
 <template>
 
   <div class="artist-info">
-    <pre>{{MeeingArtists}}</pre>
+    <pre>{{ItemMeet}}</pre>
     <div>
       <div class="picture_artiste mb-4">
       <img :src="require(`@/assets/artists/${InfoArtist.picture}`)">
@@ -45,6 +45,7 @@ export default {
     return {
       InfoArtist: [],
       MeeingArtists:[],
+      ItemMeet:[],
 
     };
   },
@@ -52,13 +53,15 @@ export default {
   mounted() {
     let url = new URL(document.location.href);
     let id = url.searchParams.get("id");
+
     console.log(id);
 
     axios.get('http://localhost:8000/api/artists/'+id).then(response =>
         this.InfoArtist = response.data)
 
-    axios.get('http://localhost:8000/api/artist_meetings/'+id).then(response =>
+    axios.get('http://localhost:8000/api/artist_meetings/').then(response =>
         this.MeeingArtists = response.data)
+
 
 
   },

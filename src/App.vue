@@ -164,7 +164,9 @@ ul.sidebar-panel-nav > li > a {
   #footer > footer.page-footer.font-small.pt-0.page-footer.mt-4.unique-color-dark{
     display: none;
   }
+    .logo{
+      width: 80%;
+    }
+  }
 
-
-}
 </style>
