@@ -5,6 +5,8 @@
 <b-row class="cartedw">
  <b-col lg="8" class="pb-2"> <h2>{{ $t('telecharger') }} </h2></b-col>
   <b-col lg="4" class="pb-2"><b-button size="med" href="/img/Carte.17774009.svg" download="Carte_Nation_Sounds">{{ $t('download') }}</b-button></b-col>
+<img src="@/assets/banner/Carte.svg">
+
 </b-row>
 
     <iframe scrolling="no" scrollwheel="false" src="https://www.google.com/maps/d/u/0/embed?mid=1-ej6YhnlI-xKt9NtEfRRgJh6d03UbkLH" width="640" height="480"></iframe>

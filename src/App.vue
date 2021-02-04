@@ -34,7 +34,7 @@
 
       </ul>
       <p>
-      <select v-model="$i18n.locale">
+      <select class="form-select form-select-lg mb-3" v-model="$i18n.locale">
         <option value="fr">fr</option>
         <option value="en">en</option>
       </select>
@@ -159,14 +159,18 @@ ul.sidebar-panel-nav > li > a {
     display: none;
   }
 }
-
+ .position-relative {
+    margin: 17%;
+}
 @media (min-width: 280px) and (max-width: 1080px) {
   #footer > footer.page-footer.font-small.pt-0.page-footer.mt-4.unique-color-dark{
     display: none;
+
   }
     .logo{
       width: 80%;
     }
   }
+
 
 </style>
