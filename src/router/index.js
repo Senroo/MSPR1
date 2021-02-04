@@ -55,7 +55,7 @@ const routes = [
     },
 
     {
-        path: '/artiste-info?name=:name',
+        path: '/artiste-info?id=:id',
         name: 'info',
         params: true,
         // route level code-splitting
