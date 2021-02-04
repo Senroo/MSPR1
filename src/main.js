@@ -8,6 +8,19 @@ import VueTour from 'vue-tour';
 import VModal from 'vue-js-modal'
 import i18n from './i18n'
 import moment from 'moment'
+import Vuex from 'vuex';
+Vue.use(Vuex);
+export default new Vuex.Store({
+
+  state: {
+    windowWidth: window.innerWidth,
+  },
+  mutations: {
+    setWindowWidth(state) {
+      state.windowWidth = window.innerWidth;
+    }
+  },
+});
 
 Vue.prototype.moment = moment
 

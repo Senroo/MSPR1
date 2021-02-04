@@ -5,7 +5,7 @@
     </div>
     <div class="container-contact">
       <div class="image-contact">
-        <img class="mt-2 image_contact" src="@/assets/banner/festival.jpg"/>
+        <img class="mt-2 image_contact" src="@/assets/banner/festivalcontact.svg"/>
       </div>
       <Form/>
   </div>
@@ -23,6 +23,23 @@ export default {
 </script>
 
 <style scoped>
+
+@media (min-width: 1080px) and (max-width: 2000px) {
+  .image-contact{
+    text-align: center;
+
+  }
+  img{
+    width:100%!important;
+    height: 45vh;
+  }
+  .i4ewOd-UzWXSb{
+    height: 100vh!important;
+  }
+
+}
+
+
 .container {
   text-align: center;
 }

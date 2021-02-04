@@ -17,4 +17,10 @@ export default {
 justify-content: center;
 }
 iframe{width: 100%;}
+
+@media (min-width: 1080px) and (max-width: 2000px) {
+  iframe{
+    height: 72vh;
+  }
+}
 </style>

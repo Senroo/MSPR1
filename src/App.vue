@@ -20,6 +20,16 @@
         <li><router-link to="/partenaire">{{ $t('partenaires') }}</router-link></li>
         <li><router-link to="/contact">{{ $t('contact') }}</router-link></li>
         <li><router-link to="/Faq">{{ $t('FAQ') }}</router-link></li>
+        <li><router-link to="/Cgv">{{ $t('conditiongeneral') }}</router-link></li>
+        <div class="reseau">
+        <a class="jaune" target="_:blank" href="https://www.linkedin.com/company/festivaldes3continents?originalSubdomain=fr">  <i class="fab fa-linkedin"></i> </a>
+          <a class="violet" target="_:blank" href="https://www.instagram.com/nationsound/">  <i class="fab fa-instagram-square"></i></a>
+           <a class="jaune" target="_:blank" href="https://www.facebook.com/nationsounds"> <i class="fab fa-facebook-square"></i></a>
+          <a class="violet" target="_:blank" href="https://www.youtube.com/channel/UCyQy3WEj4Qqxc33up9xJZHQ">  <i class="fab fa-youtube"></i></a>
+
+           </div>
+    
+
       </ul>
       <p>
       <select v-model="$i18n.locale">
@@ -44,20 +54,42 @@ import Sidebar from "./components/menu/sidebar.vue";
 import Footer from "./components/footer/Footer.vue";
 
 export default {
+  created() {
+    window.addEventListener(
+        'resize',
+        this.$store.commit('setWindowWidth')
+  )
+  },
   name: "app",
   components: {
     Burger,
     Sidebar,
         Footer,
   },
+
+
 };
 </script>
-<style scoped>
+<style >
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap');
 
 html {
   height: 100%;
+}
+.reseau{justify-content: center;
+display: flex;
+width: 100%;
+
+}
+.violet{color: #7673FE;
+
+}
+.jaune{color:#F3BA00 ;}
+ i{
+  padding: 5px;
+    font-size: 5vh;
+
 }
 
 ul img {
@@ -80,6 +112,7 @@ body {
 h2 {
     font-family: 'Poppins'!important;
     font-weight: 700!important;
+    font-size: 4vw;
 }
 .logo {
   align-self: center;
@@ -115,5 +148,12 @@ ul.sidebar-panel-nav > li > a {
 
 #headerlogo{
   text-align: right;
+}
+/* (1920x1080) Full HD Display */
+@media (min-width: 1080px) and (max-width: 2000px) {
+#app{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 }
 </style>
