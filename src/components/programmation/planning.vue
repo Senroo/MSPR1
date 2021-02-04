@@ -1,5 +1,6 @@
 <template>
   <div id="planning">
+    <pre>{{items}}</pre>
     <div class="filtre">
       <div class="filtre1 mr-5 ml-4 mt-3">
         <p>Genre</p>
@@ -35,7 +36,7 @@
         class="Item"
       >
         <router-link :to="{ name: 'info', params: { name: item.name } }"
-          ><img class="ItemImg mb-4 pr-2" :src="item.image"
+          ><img class="ItemImg mb-4 pr-2" :src="require(`@/assets/artists/${item.picture}`)"
         /></router-link>
         <router-view></router-view>
       </div>
@@ -44,118 +45,14 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
       selectedType: "",
       selectedSize: "",
-      items: [
-        {
-          id: 1,
-          name: "Damso",
-          type: "rock",
-          jour: "vendredi",
-          image: require("@/assets/artists/damso.svg"),
-        },
-        {
-          id: 1,
-          name: "Damso",
-          type: "variete",
-          jour: "vendredi",
-          image: require("@/assets/artists/damso.svg"),
-        },
-        {
-          id: 1,
-          name: "Damso",
-          type: "rap",
-          jour: "vendredi",
-          image: require("@/assets/artists/damso.svg"),
-        },
-        {
-          id: 1,
-          name: "Damso",
-          type: "rap",
-          jour: "vendredi",
-          image: require("@/assets/artists/damso.svg"),
-        },
-        {
-          id: 1,
-          name: "Damso",
-          type: "rap",
-          jour: "vendredi",
-          image: require("@/assets/artists/damso.svg"),
-        },
-        {
-          id: 1,
-          name: "Damso",
-          type: "rap",
-          jour: "vendredi",
-          image: require("@/assets/artists/damso.svg"),
-        },
-        {
-          id: 1,
-          name: "Damso",
-          type: "rap",
-          jour: "vendredi",
-          image: require("@/assets/artists/damso.svg"),
-        },
-        {
-          id: 2,
-          name: "Ninho",
-          type: "rap",
-          jour: "vendredi",
-          image: require("@/assets/artists/ninho.svg"),
-        },
-        {
-          id: 3,
-          name: "Dua Lipa",
-          type: "pop",
-          jour: "dimanche",
-          image: require("@/assets/artists/dua lipa.svg"),
-        },
-        {
-          id: 4,
-          name: "Dj snake",
-          type: "electro",
-          jour: "vendredi",
-          image: require("@/assets/artists/dj snake.svg"),
-        },
-        {
-          id: 5,
-          name: "Dj snake",
-          type: "electro",
-          jour: "vendredi",
-          image: require("@/assets/artists/dj snake.svg"),
-        },
-        {
-          id: 6,
-          name: "Dj snake",
-          type: "electro",
-          jour: "vendredi",
-          image: require("@/assets/artists/dj snake.svg"),
-        },
-        {
-          id: 7,
-          name: "Dj snake",
-          type: "electro",
-          jour: "vendredi",
-          image: require("@/assets/artists/dj snake.svg"),
-        },
-        {
-          id: 8,
-          name: "Dj snake",
-          type: "electro",
-          jour: "vendredi",
-          image: require("@/assets/artists/dj snake.svg"),
-        },
-        {
-          id: 9,
-          name: "Dj snake",
-          type: "electro",
-          jour: "vendredi",
-          image: require("@/assets/artists/dj snake.svg"),
-        },
-      ],
+      items: [],
     };
   },
   methods: {
@@ -182,6 +79,13 @@ export default {
         return filtered;
       });
     },
+  },
+  mounted() {
+
+    axios.get('http://localhost:8000/api/artists?page=1').then(response =>
+        this.items = response.data["hydra:member"])
+
+
   },
 };
 </script>
