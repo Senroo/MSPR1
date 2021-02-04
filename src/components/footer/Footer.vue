@@ -4,7 +4,7 @@
     <div class="container">
       <b-container class="">
         <b-row>
-          <router-link to="/"
+          <router-link to="/home"
             ><b-col id="v-step-1" class="mt-2 width" style="color:rgb(118, 115, 254);">
               <button class="btn" style="background-color:rgb(118, 115, 254); color:white;" >
                 <i class="fas fa-2x fa-home"></i>

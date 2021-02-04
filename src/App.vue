@@ -44,7 +44,6 @@
         <div id="body">
     <router-view></router-view>
     </div>
-    <div class="clear"></div>
     <div id="footer">
           <Footer />
       <Footerweb />
