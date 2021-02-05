@@ -5,6 +5,7 @@
 <b-row class="cartedw">
  <b-col lg="8" class="pb-2"> <h2>{{ $t('telecharger') }} </h2></b-col>
   <b-col lg="4" class="pb-2"><b-button size="med" href="/img/Carte.702ea25c.svg" download="Carte_Nation_Sounds">{{ $t('download') }}</b-button></b-col>
+<img src="@/assets/banner/Carte.svg">
 
 </b-row>
 
@@ -19,7 +20,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+img{
+  display: none;
+}
 .cartedw{
   text-align: center;
 }
